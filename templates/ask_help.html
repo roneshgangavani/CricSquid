@@ -1,0 +1,128 @@
+{% include "header.html" %}
+
+<body id="page1">
+<div class="body1">
+  <div class="main">
+    <!-- header -->
+    <header>
+      <div class="wrapper">
+        <h1><a href="/" id="logo">Hope Center</a></h1>
+        <nav>
+          <ul id="top_nav">
+            <li><a href="/"><img src="static/images/top_icon1.gif" alt=""></a></li>
+            <li><a href="#"><img src="static/images/top_icon2.gif" alt=""></a></li>
+            <li class="end"><a href="#"><img src="static/images/top_icon3.gif" alt=""></a></li>
+          </ul>
+        </nav>
+        <nav>
+          <ul id="menu">
+            <li><a href="/">Home</a></li>
+            <li id="menu_active"><a href="/covid/ask_help/">Ask Help</a></li>
+            <li><a href="/covid/view_available_help/">View Avaiable Help</a></li>
+            <li ><a href="/covid/volunteer_regi/">Become volunteer</a></li>
+            <li><a href="#"> Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="slider">
+        <iframe
+        src="/covid_requirments/user_post/"
+        class="dash-iframe",
+        height="300vh"
+        width="950vh"
+      >
+    </iframe>
+      </div>
+
+    </header>
+    <!-- <iframe
+        src="/covid_requirments/user_post/"
+        class="dash-iframe",
+        height="300vh"
+        width="950vh"
+      >
+    </iframe>
+    <div>
+
+    </div>
+    <iframe
+      src="/hopecenter/view_help/"
+      class="dash-iframe",
+      height="300vh"
+      width="950vh"
+      >
+  </iframe>
+ -->
+
+    <!-- / header -->
+    <!-- content -->
+
+    <!-- / content -->
+    <!-- footer -->
+    <footer>
+      <div class="wrapper">
+  
+        <!-- <nav>
+          <ul id="footer_menu">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="mission.html">Our Mission</a></li>
+            <li><a href="news.html">News &amp; Press</a></li>
+            <li><a href="help.html">How to Help</a></li>
+            <li class="end"><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav> -->
+        <div class="tel"><span></span>9574510371</div>
+      </div>
+      <div id="footer_text">Copyright &copy; <a href="https://www.linkedin.com/in/ronesh-gangavani/">Ronesh Gangavani</a> All Rights Reserved<br>
+        Design by <a target="_blank" href="#"> Himself</a></div>
+    </footer>
+    <!-- / footer -->
+  </div>
+  </div>
+  <script type="text/javascript">Cufon.now();</script>
+  <script type="text/javascript">
+  $(window).load(function () {
+    $('.slider')._TMS({
+        preset: 'zabor',
+        easing: 'easeOutQuad',
+        duration: 800,
+        pagination: true,
+        banners: true,
+        waitBannerAnimation: false,
+        slideshow: 6000,
+        bannerShow: function (banner) {
+            banner.css({
+                right: '-700px'
+            }).stop().animate({
+                right: '0'
+            }, 600, 'easeOutExpo')
+        },
+        bannerHide: function (banner) {
+            banner.stop().animate({
+                right: '-700'
+            }, 600, 'easeOutExpo')
+        }
+    })
+    $('.pagination li').hover(function () {
+        if (!$(this).hasClass('current')) {
+            $(this).find('a').stop().animate({
+                backgroundPosition: '0 0'
+            }, 600, 'easeOutExpo', function () {
+                $(this).parent().css({
+                    backgroundPosition: '-20px 0'
+                })
+            });
+        }
+    }, function () {
+        if (!$(this).hasClass('current')) {
+            $(this).css({
+                backgroundPosition: '0 0'
+            }).find('a').stop().animate({
+                backgroundPosition: '-250px 0'
+            }, 600, 'easeOutExpo');
+        }
+    })
+  })
+  </script>
+  </body>
+  </html>
