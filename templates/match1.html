@@ -158,20 +158,22 @@ body {
             <div class="container">
               
               <div class="row">
-                <div class="col-lg-4">
+                {% for key,value in sqaud1.iterrows()  %}
+                <div class="col-lg-4" >
                 <div class="card-service wow fadeInUp">
                     <div class="header">
-                    <img src="{{ url_for('static', filename='assets/img/player_pic/KL Rahul.png') }}" alt="">
+                    <img src="/static/assets/img/player_pic/{{value['Player Name']}}.png" alt="">
                     </div>
                     <div class="body">
-                    <h5 class="text-secondary">Rohit Sharma</h5>
+                    <h5 class="text-secondary">{{value['Player Name']}}</h5>
                     <p>Upcoming..</p>
                     <span onclick="openNav()">
-                    <button type="button" class="btn btn-primary">Team Analysis</button>
+                    <button type="button" class="btn btn-primary">Report Card</button>
                     </span>
                     </div>
                 </div>
-                </div>      
+                </div> 
+                {% endfor %}     
               </div>
             </div> <!-- .container -->
           </div> <!-- .page-section -->
@@ -201,8 +203,50 @@ body {
     </div>
     
     <div id="team2" class="tabcontent">
-    <h3>Paris</h3>
-    <p>Paris is the capital of France.</p> 
+      <div class="page-section">
+        <div class="container">
+          <div class="row">
+            {% for key,value in squad2.iterrows()  %}
+            <div class="col-lg-4">
+            <div class="card-service wow fadeInUp">
+                <div class="header">
+                <img src="/static/assets/img/player_pic/{{value['Player Name']}}.png" alt="">
+                </div>
+                <div class="body">
+                <h5 class="text-secondary">{{value['Player Name']}}</h5>
+                <p>Upcoming..</p>
+                <span onclick="openNav()">
+                <button type="button" class="btn btn-primary">Report Card</button>
+                </span>
+                </div>
+            </div>
+            </div> 
+            {% endfor %}     
+          </div>
+        </div> <!-- .container -->
+      </div> <!-- .page-section -->
+      <div id="myNav1" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+        <div class="overlay-content">
+            <div class="page-section">
+                <div class="container">
+                  
+                  <div class="row">
+                    <div class="col-lg-4">
+                    <div class="card-service wow fadeInUp">
+                        <div class="body">
+                        <h5 class="text-secondary">T20s(Overall)</h5>
+                        <p><b>Performance Since 2019 </b></p>
+                        <p><b>Matches:</b><i>34</i> </p>
+                        <p><b>Runs:</b><i>540</i> </p>
+                        </div>
+                    </div>
+                    </div>      
+                  </div>
+                </div> <!-- .container -->
+              </div> <!-- .page-section -->
+        </div>
+      </div>
     </div>
     
     <div id="playing" class="tabcontent">
@@ -247,6 +291,14 @@ function openNav() {
 
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
+}
+
+function openNav1() {
+  document.getElementById("myNav1").style.width = "100%";
+}
+
+function closeNav1() {
+  document.getElementById("myNav1").style.width = "0%";
 }
     </script>
 {% include "footer.html" %}
