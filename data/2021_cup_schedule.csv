@@ -1,0 +1,46 @@
+,id,series_id,venue,date,status,result,match_title,match_subtitle,home,away
+id,2547437,894,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),2021-10-17T10:00:00+00:00,Complete,Oman won by 10 wkts (38b rem),"Oman v Papua New Guinea at Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1), T20I.","1st Match, First Round Group B",300,261
+id,2547439,894,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1) (night),2021-10-17T14:00:00+00:00,Complete,Scotland won by 6 runs,"Bangladesh v Scotland at Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1) (night), T20I.","2nd Match, First Round Group B",342,357
+id,2547441,894,"Zayed Cricket Stadium, Abu Dhabi",2021-10-18T10:00:00+00:00,Complete,Ireland won by 7 wkts (29b rem),"Ireland v Netherlands at Zayed Cricket Stadium, Abu Dhabi, T20I.","3rd Match, First Round Group A",354,303
+id,2547443,894,"Zayed Cricket Stadium, Abu Dhabi (night)",2021-10-18T14:00:00+00:00,Complete,Sri Lanka won by 7 wkts (39b rem),"Namibia v Sri Lanka at Zayed Cricket Stadium, Abu Dhabi (night), T20I.","4th Match, First Round Group A",120030,291
+id,2547445,894,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),2021-10-19T10:00:00+00:00,Complete,Scotland won by 17 runs,"Papua New Guinea v Scotland at Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1), T20I.","5th Match, First Round Group B",261,357
+id,2547447,894,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1) (night),2021-10-19T14:00:00+00:00,Complete,Bangladesh won by 26 runs,"Oman v Bangladesh at Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1) (night), T20I.","6th Match, First Round Group B",300,342
+id,2547449,894,"Zayed Cricket Stadium, Abu Dhabi",2021-10-20T10:00:00+00:00,Complete,Namibia won by 6 wkts (6b rem),"Namibia v Netherlands at Zayed Cricket Stadium, Abu Dhabi, T20I.","7th Match, First Round Group A",120030,303
+id,2547451,894,"Zayed Cricket Stadium, Abu Dhabi (night)",2021-10-20T14:00:00+00:00,Complete,Sri Lanka won by 70 runs,"Ireland v Sri Lanka at Zayed Cricket Stadium, Abu Dhabi (night), T20I.","8th Match, First Round Group A",354,291
+id,2547453,894,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1),2021-10-21T10:00:00+00:00,Complete,Bangladesh won by 84 runs,"Bangladesh v Papua New Guinea at Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1), T20I.","9th Match, First Round Group B",342,261
+id,2547455,894,Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1) (night),2021-10-21T14:00:00+00:00,Complete,Scotland won by 8 wkts (18b rem),"Oman v Scotland at Al Amerat Cricket Ground Oman Cricket (Ministry Turf 1) (night), T20I.","10th Match, First Round Group B",300,357
+id,2547457,894,Sharjah Cricket Stadium,2021-10-22T10:00:00+00:00,Fixture,,"Ireland v Namibia at Sharjah Cricket Stadium, T20I.","11th Match, First Round Group A",354,120030
+id,2547459,894,Sharjah Cricket Stadium (night),2021-10-22T14:00:00+00:00,Fixture,,"Netherlands v Sri Lanka at Sharjah Cricket Stadium (night), T20I.","12th Match, First Round Group A",303,291
+id,2547461,894,"Zayed Cricket Stadium, Abu Dhabi",2021-10-23T10:00:00+00:00,Fixture,,"Australia v South Africa at Zayed Cricket Stadium, Abu Dhabi, T20I.","13th Match, Group 1",273,276
+id,2547463,894,Dubai International Cricket Stadium (night),2021-10-23T14:00:00+00:00,Fixture,,"England v West Indies at Dubai International Cricket Stadium (night), T20I.","14th Match, Group 1",270,279
+id,2547465,894,Sharjah Cricket Stadium,2021-10-24T10:00:00+00:00,Fixture,,"Bangladesh v TBC at Sharjah Cricket Stadium, T20I.","15th Match, Group 1",342,149859
+id,2547467,894,Dubai International Cricket Stadium (night),2021-10-24T14:00:00+00:00,Fixture,,"India v Pakistan at Dubai International Cricket Stadium (night), T20I.","16th Match, Group 2",285,288
+id,2547469,894,Sharjah Cricket Stadium (night),2021-10-25T14:00:00+00:00,Fixture,,"Afghanistan v Scotland at Sharjah Cricket Stadium (night), T20I.","17th Match, Group 2",387,357
+id,2547471,894,Dubai International Cricket Stadium,2021-10-26T10:00:00+00:00,Fixture,,"South Africa v West Indies at Dubai International Cricket Stadium, T20I.","18th Match, Group 1",276,279
+id,2547473,894,Sharjah Cricket Stadium (night),2021-10-26T14:00:00+00:00,Fixture,,"Pakistan v New Zealand at Sharjah Cricket Stadium (night), T20I.","19th Match, Group 2",288,282
+id,2547475,894,"Zayed Cricket Stadium, Abu Dhabi",2021-10-27T10:00:00+00:00,Fixture,,"England v Bangladesh at Zayed Cricket Stadium, Abu Dhabi, T20I.","20th Match, Group 1",270,342
+id,2547477,894,"Zayed Cricket Stadium, Abu Dhabi (night)",2021-10-27T14:00:00+00:00,Fixture,,"Scotland v TBC at Zayed Cricket Stadium, Abu Dhabi (night), T20I.","21st Match, Group 2",357,149862
+id,2547479,894,Dubai International Cricket Stadium,2021-10-28T10:00:00+00:00,Fixture,,"Australia v TBC at Dubai International Cricket Stadium, T20I.","22nd Match, Group 1",273,149865
+id,2547481,894,Sharjah Cricket Stadium,2021-10-29T10:00:00+00:00,Fixture,,"West Indies v Bangladesh at Sharjah Cricket Stadium, T20I.","23rd Match, Group 1",279,342
+id,2547483,894,Dubai International Cricket Stadium (night),2021-10-29T14:00:00+00:00,Fixture,,"Afghanistan v Pakistan at Dubai International Cricket Stadium (night), T20I.","24th Match, Group 2",387,288
+id,2547485,894,Sharjah Cricket Stadium,2021-10-30T10:00:00+00:00,Fixture,,"South Africa v TBC at Sharjah Cricket Stadium, T20I.","25th Match, Group 1",276,149868
+id,2547487,894,Dubai International Cricket Stadium (night),2021-10-30T14:00:00+00:00,Fixture,,"Australia v England at Dubai International Cricket Stadium (night), T20I.","26th Match, Group 1",273,270
+id,2547489,894,"Zayed Cricket Stadium, Abu Dhabi",2021-10-31T10:00:00+00:00,Fixture,,"Afghanistan v TBC at Zayed Cricket Stadium, Abu Dhabi, T20I.","27th Match, Group 2",387,149871
+id,2547491,894,Dubai International Cricket Stadium (night),2021-10-31T14:00:00+00:00,Fixture,,"India v New Zealand at Dubai International Cricket Stadium (night), T20I.","28th Match, Group 2",285,282
+id,2547493,894,Sharjah Cricket Stadium (night),2021-11-01T14:00:00+00:00,Fixture,,"England v TBC at Sharjah Cricket Stadium (night), T20I.","29th Match, Group 1",270,149874
+id,2547495,894,"Zayed Cricket Stadium, Abu Dhabi",2021-11-02T10:00:00+00:00,Fixture,,"South Africa v Bangladesh at Zayed Cricket Stadium, Abu Dhabi, T20I.","30th Match, Group 1",276,342
+id,2547497,894,"Zayed Cricket Stadium, Abu Dhabi (night)",2021-11-02T14:00:00+00:00,Fixture,,"Pakistan v TBC at Zayed Cricket Stadium, Abu Dhabi (night), T20I.","31st Match, Group 2",288,149877
+id,2547499,894,Dubai International Cricket Stadium,2021-11-03T10:00:00+00:00,Fixture,,"New Zealand v Scotland at Dubai International Cricket Stadium, T20I.","32nd Match, Group 2",282,357
+id,2547501,894,"Zayed Cricket Stadium, Abu Dhabi (night)",2021-11-03T14:00:00+00:00,Fixture,,"Afghanistan v India at Zayed Cricket Stadium, Abu Dhabi (night), T20I.","33rd Match, Group 2",387,285
+id,2547503,894,Dubai International Cricket Stadium,2021-11-04T10:00:00+00:00,Fixture,,"Australia v Bangladesh at Dubai International Cricket Stadium, T20I.","34th Match, Group 1",273,342
+id,2547505,894,"Zayed Cricket Stadium, Abu Dhabi (night)",2021-11-04T14:00:00+00:00,Fixture,,"West Indies v TBC at Zayed Cricket Stadium, Abu Dhabi (night), T20I.","35th Match, Group 1",279,149880
+id,2547507,894,Sharjah Cricket Stadium,2021-11-05T10:00:00+00:00,Fixture,,"New Zealand v TBC at Sharjah Cricket Stadium, T20I.","36th Match, Group 2",282,149883
+id,2547509,894,Dubai International Cricket Stadium (night),2021-11-05T14:00:00+00:00,Fixture,,"India v Scotland at Dubai International Cricket Stadium (night), T20I.","37th Match, Group 2",285,357
+id,2547511,894,"Zayed Cricket Stadium, Abu Dhabi",2021-11-06T10:00:00+00:00,Fixture,,"Australia v West Indies at Zayed Cricket Stadium, Abu Dhabi, T20I.","38th Match, Group 1",273,279
+id,2547513,894,Sharjah Cricket Stadium (night),2021-11-06T14:00:00+00:00,Fixture,,"England v South Africa at Sharjah Cricket Stadium (night), T20I.","39th Match, Group 1",270,276
+id,2547515,894,"Zayed Cricket Stadium, Abu Dhabi",2021-11-07T10:00:00+00:00,Fixture,,"Afghanistan v New Zealand at Zayed Cricket Stadium, Abu Dhabi, T20I.","40th Match, Group 2",387,282
+id,2547517,894,Sharjah Cricket Stadium (night),2021-11-07T14:00:00+00:00,Fixture,,"Pakistan v Scotland at Sharjah Cricket Stadium (night), T20I.","41st Match, Group 2",288,357
+id,2547519,894,Dubai International Cricket Stadium (night),2021-11-08T14:00:00+00:00,Fixture,,"India v TBC at Dubai International Cricket Stadium (night), T20I.","42nd Match, Group 2",285,149886
+id,2547521,894,"Zayed Cricket Stadium, Abu Dhabi (night)",2021-11-10T14:00:00+00:00,Fixture,,"TBC v TBC at Zayed Cricket Stadium, Abu Dhabi (night), T20I.",1st Semi-Final,149889,149892
+id,2547523,894,Dubai International Cricket Stadium (night),2021-11-11T14:00:00+00:00,Fixture,,"TBC v TBC at Dubai International Cricket Stadium (night), T20I.",2nd Semi-Final,149895,149898
+id,2547525,894,Dubai International Cricket Stadium (night),2021-11-14T14:00:00+00:00,Fixture,,"TBC v TBC at Dubai International Cricket Stadium (night), T20I.",Final,149901,149904

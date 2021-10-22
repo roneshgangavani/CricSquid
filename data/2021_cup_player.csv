@@ -1,0 +1,340 @@
+,bat_order,player_id,player_name,how_out,minutes,runs,balls,fours,sixes,strike_rate,overs,maidens,runs_conceded,wickets,economy,dot_balls,extras,match_id,series_id,home,innings_no,innings_title
+0,1.0,908547,Tony Ura, b Bilal Khan,4,0.0,5.0,0.0,0.0,0.00,,,,,,,,2547437,894,Oman,1,Papua New Guinea Innings
+1,2.0,1322982,Lega Siaka, b Kaleemullah,4,0.0,3.0,0.0,0.0,0.00,,,,,,,,2547437,894,Oman,1,Papua New Guinea Innings
+2,3.0,75180,Assad Vala,c Jatinder Singh b Kaleemullah,65,56.0,43.0,4.0,3.0,130.23,,,,,,,,2547437,894,Oman,1,Papua New Guinea Innings
+3,4.0,998952,Charles Amini,run out (Mohammad Nadeem),47,37.0,26.0,4.0,1.0,142.30,,,,,,,,2547437,894,Oman,1,Papua New Guinea Innings
+4,5.0,1261293,Sese Bau,c Jatinder Singh b Zeeshan Maqsood,24,13.0,13.0,2.0,0.0,100.00,,,,,,,,2547437,894,Oman,1,Papua New Guinea Innings
+5,6.0,1572771,Norman Vanua, b Zeeshan Maqsood,6,1.0,2.0,0.0,0.0,50.00,,,,,,,,2547437,894,Oman,1,Papua New Guinea Innings
+6,7.0,3345111,Simon Atai,c Ayaan Khan b Bilal Khan,11,3.0,5.0,0.0,0.0,60.00,,,,,,,,2547437,894,Oman,1,Papua New Guinea Innings
+7,8.0,1938531,Kiplin Doriga,c Sandeep Goud b Zeeshan Maqsood,3,0.0,2.0,0.0,0.0,0.00,,,,,,,,2547437,894,Oman,1,Papua New Guinea Innings
+8,9.0,3367683,Damien Ravu,c Mohammad Nadeem b Zeeshan Maqsood,9,1.0,4.0,0.0,0.0,25.00,,,,,,,,2547437,894,Oman,1,Papua New Guinea Innings
+9,10.0,1572777,Kabua Morea,not out,11,6.0,7.0,0.0,0.0,85.71,,,,,,,,2547437,894,Oman,1,Papua New Guinea Innings
+10,11.0,1938555,Nosaina Pokana,not out,9,5.0,10.0,0.0,0.0,50.00,,,,,,,,2547437,894,Oman,1,Papua New Guinea Innings
+0,,2813871,Bilal Khan,,,,,2.0,0.0,,4,1.0,16.0,2.0,4.00,15.0,0,2547437,894,Oman,1,Papua New Guinea Innings
+1,,3231933,Kaleemullah,,,,,4.0,0.0,,3,0.0,19.0,2.0,6.33,11.0,0,2547437,894,Oman,1,Papua New Guinea Innings
+2,,2821791,Aqib Ilyas,,,,,1.0,1.0,,4,0.0,28.0,0.0,7.00,6.0,0,2547437,894,Oman,1,Papua New Guinea Innings
+3,,125964,Mohammad Nadeem,,,,,2.0,1.0,,3,0.0,23.0,0.0,7.66,8.0,0,2547437,894,Oman,1,Papua New Guinea Innings
+4,,1755255,Khawar Ali,,,,,0.0,1.0,,2,0.0,17.0,0.0,8.50,1.0,0,2547437,894,Oman,1,Papua New Guinea Innings
+5,,1755261,Zeeshan Maqsood,,,,,1.0,1.0,,4,0.0,20.0,4.0,5.00,13.0,1,2547437,894,Oman,1,Papua New Guinea Innings
+0,1.0,2821791,Aqib Ilyas,not out,67,50.0,43.0,5.0,1.0,116.27,,,,,,,,2547437,894,Oman,2,Oman Innings
+1,2.0,923280,Jatinder Singh,not out,67,73.0,42.0,7.0,4.0,173.80,,,,,,,,2547437,894,Oman,2,Oman Innings
+0,,1755255,Khawar Ali,,,,,,,,,,,,,,,2547437,894,Oman,2,Oman Innings
+1,,1755261,Zeeshan Maqsood,,,,,,,,,,,,,,,2547437,894,Oman,2,Oman Innings
+2,,3830169,Kashyap Prajapati,,,,,,,,,,,,,,,2547437,894,Oman,2,Oman Innings
+3,,3231942,Naseem Khushi,,,,,,,,,,,,,,,2547437,894,Oman,2,Oman Innings
+4,,125964,Mohammad Nadeem,,,,,,,,,,,,,,,2547437,894,Oman,2,Oman Innings
+5,,2868969,Ayaan Khan,,,,,,,,,,,,,,,2547437,894,Oman,2,Oman Innings
+6,,3522084,Sandeep Goud,,,,,,,,,,,,,,,2547437,894,Oman,2,Oman Innings
+7,,3231933,Kaleemullah,,,,,,,,,,,,,,,2547437,894,Oman,2,Oman Innings
+8,,2813871,Bilal Khan,,,,,,,,,,,,,,,2547437,894,Oman,2,Oman Innings
+0,,1572777,Kabua Morea,,,,,3.0,0.0,,2,0.0,18.0,0.0,9.00,6.0,1,2547437,894,Oman,2,Oman Innings
+1,,3367683,Damien Ravu,,,,,3.0,1.0,,3,0.0,28.0,0.0,9.33,8.0,3,2547437,894,Oman,2,Oman Innings
+2,,1938555,Nosaina Pokana,,,,,2.0,0.0,,2,0.0,15.0,0.0,7.50,5.0,1,2547437,894,Oman,2,Oman Innings
+3,,3345111,Simon Atai,,,,,1.0,0.0,,1,0.0,9.0,0.0,9.00,0.0,0,2547437,894,Oman,2,Oman Innings
+4,,998952,Charles Amini,,,,,1.0,3.0,,2.4,0.0,31.0,0.0,11.62,3.0,0,2547437,894,Oman,2,Oman Innings
+5,,75180,Assad Vala,,,,,0.0,1.0,,1,0.0,11.0,0.0,11.00,0.0,0,2547437,894,Oman,2,Oman Innings
+6,,1322982,Lega Siaka,,,,,2.0,0.0,,2,0.0,17.0,0.0,8.50,2.0,1,2547437,894,Oman,2,Oman Innings
+0,1.0,2015427,George Munsey, b Mahedi Hasan,47,29.0,23.0,2.0,2.0,126.08,,,,,,,,2547439,894,Bangladesh,1,Scotland Innings
+1,2.0,76350,Kyle Coetzer, b Mohammad Saifuddin,15,0.0,7.0,0.0,0.0,0.00,,,,,,,,2547439,894,Bangladesh,1,Scotland Innings
+2,3.0,1251816,Matthew Cross,lbw b Mahedi Hasan,28,11.0,17.0,1.0,0.0,64.70,,,,,,,,2547439,894,Bangladesh,1,Scotland Innings
+3,4.0,76482,Richie Berrington,c Afif Hossain b Shakib Al Hasan,13,2.0,5.0,0.0,0.0,40.00,,,,,,,,2547439,894,Bangladesh,1,Scotland Innings
+4,5.0,697317,Calum MacLeod, b Mahedi Hasan,18,5.0,14.0,0.0,0.0,35.71,,,,,,,,2547439,894,Bangladesh,1,Scotland Innings
+5,6.0,1244910,Michael Leask,c Liton Das b Shakib Al Hasan,3,0.0,2.0,0.0,0.0,0.00,,,,,,,,2547439,894,Bangladesh,1,Scotland Innings
+6,7.0,2619609,Chris Greaves,c Shakib Al Hasan b Mustafizur Rahman,45,45.0,28.0,4.0,2.0,160.71,,,,,,,,2547439,894,Bangladesh,1,Scotland Innings
+7,8.0,1977255,Mark Watt,c Soumya Sarkar b Taskin Ahmed,28,22.0,17.0,2.0,0.0,129.41,,,,,,,,2547439,894,Bangladesh,1,Scotland Innings
+8,9.0,1221807,Josh Davey, b Mustafizur Rahman,15,8.0,5.0,0.0,1.0,160.00,,,,,,,,2547439,894,Bangladesh,1,Scotland Innings
+9,10.0,1244922,Safyaan Sharif,not out,4,8.0,2.0,0.0,1.0,400.00,,,,,,,,2547439,894,Bangladesh,1,Scotland Innings
+10,11.0,2422617,Brad Wheal,not out,3,1.0,1.0,0.0,0.0,100.00,,,,,,,,2547439,894,Bangladesh,1,Scotland Innings
+0,,1615530,Taskin Ahmed,,,,,3.0,2.0,,3,0.0,28.0,1.0,9.33,11.0,1,2547439,894,Bangladesh,1,Scotland Innings
+1,,992718,Mustafizur Rahman,,,,,2.0,2.0,,4,1.0,32.0,2.0,8.00,12.0,2,2547439,894,Bangladesh,1,Scotland Innings
+2,,1887222,Mohammad Saifuddin,,,,,2.0,1.0,,4,0.0,30.0,1.0,7.50,8.0,2,2547439,894,Bangladesh,1,Scotland Innings
+3,,168441,Shakib Al Hasan,,,,,1.0,0.0,,4,0.0,17.0,2.0,4.25,12.0,0,2547439,894,Bangladesh,1,Scotland Innings
+4,,2499273,Mahedi Hasan,,,,,0.0,1.0,,4,0.0,19.0,3.0,4.75,11.0,0,2547439,894,Bangladesh,1,Scotland Innings
+5,,2807997,Afif Hossain,,,,,1.0,0.0,,1,0.0,10.0,0.0,10.00,1.0,0,2547439,894,Bangladesh,1,Scotland Innings
+0,1.0,1610820,Liton Das,c Munsey b Wheal,-,5.0,7.0,0.0,0.0,71.42,,,,,,,,2547439,894,Bangladesh,2,Bangladesh Innings
+1,2.0,1310043,Soumya Sarkar,c Munsey b Davey,-,5.0,5.0,1.0,0.0,100.00,,,,,,,,2547439,894,Bangladesh,2,Bangladesh Innings
+2,3.0,168441,Shakib Al Hasan,c MacLeod b Greaves,-,20.0,28.0,1.0,0.0,71.42,,,,,,,,2547439,894,Bangladesh,2,Bangladesh Innings
+3,4.0,168099,Mushfiqur Rahim, b Greaves,-,38.0,36.0,1.0,2.0,105.55,,,,,,,,2547439,894,Bangladesh,2,Bangladesh Innings
+4,5.0,168087,Mahmudullah,c MacLeod b Wheal,-,23.0,22.0,1.0,1.0,104.54,,,,,,,,2547439,894,Bangladesh,2,Bangladesh Innings
+5,6.0,2807997,Afif Hossain,c Davey b Watt,-,18.0,12.0,2.0,0.0,150.00,,,,,,,,2547439,894,Bangladesh,2,Bangladesh Innings
+6,7.0,1232307,Nurul Hasan,c MacLeod b Wheal,-,2.0,3.0,0.0,0.0,66.66,,,,,,,,2547439,894,Bangladesh,2,Bangladesh Innings
+7,8.0,2499273,Mahedi Hasan,not out,-,13.0,5.0,1.0,1.0,260.00,,,,,,,,2547439,894,Bangladesh,2,Bangladesh Innings
+8,9.0,1887222,Mohammad Saifuddin,not out,-,5.0,2.0,1.0,0.0,250.00,,,,,,,,2547439,894,Bangladesh,2,Bangladesh Innings
+0,,1615530,Taskin Ahmed,,,,,,,,,,,,,,,2547439,894,Bangladesh,2,Bangladesh Innings
+1,,992718,Mustafizur Rahman,,,,,,,,,,,,,,,2547439,894,Bangladesh,2,Bangladesh Innings
+0,,2422617,Brad Wheal,,,,,2.0,1.0,,4,0.0,24.0,3.0,6.00,12.0,0,2547439,894,Bangladesh,2,Bangladesh Innings
+1,,1221807,Josh Davey,,,,,2.0,0.0,,4,0.0,24.0,1.0,6.00,7.0,1,2547439,894,Bangladesh,2,Bangladesh Innings
+2,,1244922,Safyaan Sharif,,,,,3.0,1.0,,3,0.0,26.0,0.0,8.66,7.0,1,2547439,894,Bangladesh,2,Bangladesh Innings
+3,,1244910,Michael Leask,,,,,0.0,2.0,,2,0.0,20.0,0.0,10.00,4.0,0,2547439,894,Bangladesh,2,Bangladesh Innings
+4,,1977255,Mark Watt,,,,,0.0,0.0,,4,0.0,19.0,1.0,4.75,7.0,0,2547439,894,Bangladesh,2,Bangladesh Innings
+5,,2619609,Chris Greaves,,,,,1.0,0.0,,3,0.0,19.0,2.0,6.33,5.0,1,2547439,894,Bangladesh,2,Bangladesh Innings
+0,1.0,1929603,Max O'Dowd,c Tector b Adair,83,51.0,47.0,7.0,0.0,108.51,,,,,,,,2547441,894,Ireland,1,Netherlands Innings
+1,2.0,1412109,Ben Cooper,run out (Simi Singh/Stirling),5,0.0,1.0,0.0,0.0,0.00,,,,,,,,2547441,894,Ireland,1,Netherlands Innings
+2,3.0,3108585,Bas de Leede, b Little,19,7.0,11.0,1.0,0.0,63.63,,,,,,,,2547441,894,Ireland,1,Netherlands Innings
+3,4.0,1139334,Colin Ackermann,c Rock b Campher,23,11.0,16.0,1.0,0.0,68.75,,,,,,,,2547441,894,Ireland,1,Netherlands Innings
+4,5.0,142992,Ryan ten Doeschate,lbw b Campher,4,0.0,1.0,0.0,0.0,0.00,,,,,,,,2547441,894,Ireland,1,Netherlands Innings
+5,6.0,3381963,Scott Edwards,lbw b Campher,4,0.0,1.0,0.0,0.0,0.00,,,,,,,,2547441,894,Ireland,1,Netherlands Innings
+6,7.0,143562,Roelof van der Merwe, b Campher,2,0.0,1.0,0.0,0.0,0.00,,,,,,,,2547441,894,Ireland,1,Netherlands Innings
+7,8.0,625983,Pieter Seelaar,c Balbirnie b Adair,43,21.0,29.0,2.0,0.0,72.41,,,,,,,,2547441,894,Ireland,1,Netherlands Innings
+8,9.0,1321578,Logan van Beek,run out (Little/Rock),17,11.0,12.0,0.0,0.0,91.66,,,,,,,,2547441,894,Ireland,1,Netherlands Innings
+9,10.0,3314121,Fred Klaassen,not out,4,0.0,0.0,0.0,0.0,-,,,,,,,,2547441,894,Ireland,1,Netherlands Innings
+10,11.0,1786269,Brandon Glover,c Campher b Adair,2,0.0,1.0,0.0,0.0,0.00,,,,,,,,2547441,894,Ireland,1,Netherlands Innings
+0,,910293,Paul Stirling,,,,,0.0,0.0,,1,0.0,1.0,0.0,1.00,5.0,0,2547441,894,Ireland,1,Netherlands Innings
+1,,2784213,Josh Little,,,,,2.0,0.0,,4,0.0,14.0,1.0,3.50,17.0,0,2547441,894,Ireland,1,Netherlands Innings
+2,,1579335,Mark Adair,,,,,0.0,0.0,,4,0.0,9.0,3.0,2.25,16.0,0,2547441,894,Ireland,1,Netherlands Innings
+3,,3015783,Simi Singh,,,,,2.0,0.0,,4,0.0,27.0,0.0,6.75,5.0,0,2547441,894,Ireland,1,Netherlands Innings
+4,,1787775,Curtis Campher,,,,,4.0,0.0,,4,0.0,26.0,4.0,6.50,12.0,2,2547441,894,Ireland,1,Netherlands Innings
+5,,2784189,Ben White,,,,,3.0,0.0,,3,0.0,27.0,0.0,9.00,3.0,1,2547441,894,Ireland,1,Netherlands Innings
+0,1.0,910293,Paul Stirling,not out,-,30.0,39.0,1.0,1.0,76.92,,,,,,,,2547441,894,Ireland,2,Ireland Innings
+1,2.0,73827,Kevin O'Brien,c van Beek b Glover,-,9.0,10.0,2.0,0.0,90.00,,,,,,,,2547441,894,Ireland,2,Ireland Innings
+2,3.0,910281,Andy Balbirnie,c van der Merwe b Klaassen,-,8.0,6.0,2.0,0.0,133.33,,,,,,,,2547441,894,Ireland,2,Ireland Innings
+3,4.0,3298149,Gareth Delany, b Seelaar,-,44.0,29.0,5.0,2.0,151.72,,,,,,,,2547441,894,Ireland,2,Ireland Innings
+4,5.0,1787775,Curtis Campher,not out,-,7.0,7.0,1.0,0.0,100.00,,,,,,,,2547441,894,Ireland,2,Ireland Innings
+0,,2884233,Harry Tector,,,,,,,,,,,,,,,2547441,894,Ireland,2,Ireland Innings
+1,,3337617,Neil Rock,,,,,,,,,,,,,,,2547441,894,Ireland,2,Ireland Innings
+2,,3015783,Simi Singh,,,,,,,,,,,,,,,2547441,894,Ireland,2,Ireland Innings
+3,,1579335,Mark Adair,,,,,,,,,,,,,,,2547441,894,Ireland,2,Ireland Innings
+4,,2784213,Josh Little,,,,,,,,,,,,,,,2547441,894,Ireland,2,Ireland Innings
+5,,2784189,Ben White,,,,,,,,,,,,,,,2547441,894,Ireland,2,Ireland Innings
+0,,3314121,Fred Klaassen,,,,,3.0,0.0,,3,0.0,18.0,1.0,6.00,12.0,3,2547441,894,Ireland,2,Ireland Innings
+1,,143562,Roelof van der Merwe,,,,,4.0,1.0,,4,0.0,35.0,0.0,8.75,7.0,1,2547441,894,Ireland,2,Ireland Innings
+2,,1321578,Logan van Beek,,,,,2.0,0.0,,3,0.0,14.0,0.0,4.66,11.0,0,2547441,894,Ireland,2,Ireland Innings
+3,,1786269,Brandon Glover,,,,,2.0,1.0,,3,0.0,21.0,1.0,7.00,8.0,0,2547441,894,Ireland,2,Ireland Innings
+4,,625983,Pieter Seelaar,,,,,0.0,1.0,,2.1,0.0,14.0,1.0,6.46,4.0,0,2547441,894,Ireland,2,Ireland Innings
+0,1.0,1313793,Stephan Baard,c de Silva b Theekshana,13,7.0,11.0,1.0,0.0,63.63,,,,,,,,2547443,894,Namibia,1,Namibia Innings
+1,2.0,1790004,Zane Green,c Shanaka b Theekshana,30,8.0,13.0,0.0,0.0,61.53,,,,,,,,2547443,894,Namibia,1,Namibia Innings
+2,3.0,948318,Craig Williams,lbw b de Silva,56,29.0,36.0,0.0,2.0,80.55,,,,,,,,2547443,894,Namibia,1,Namibia Innings
+3,4.0,1557222,Gerhard Erasmus,c de Silva b Kumara,33,20.0,19.0,2.0,0.0,105.26,,,,,,,,2547443,894,Namibia,1,Namibia Innings
+4,5.0,663432,David Wiese,lbw b Karunaratne,12,6.0,7.0,0.0,0.0,85.71,,,,,,,,2547443,894,Namibia,1,Namibia Innings
+5,6.0,1661475,JJ Smit,not out,33,12.0,15.0,0.0,0.0,80.00,,,,,,,,2547443,894,Namibia,1,Namibia Innings
+6,7.0,1447446,Jan Frylinck, b Theekshana,6,2.0,4.0,0.0,0.0,50.00,,,,,,,,2547443,894,Namibia,1,Namibia Innings
+7,8.0,3214431,Jan Nicol Loftie-Eaton,lbw b de Silva,11,3.0,6.0,0.0,0.0,50.00,,,,,,,,2547443,894,Namibia,1,Namibia Innings
+8,9.0,2094963,Ruben Trumpelmann,c Shanaka b Chameera,6,1.0,3.0,0.0,0.0,33.33,,,,,,,,2547443,894,Namibia,1,Namibia Innings
+9,10.0,925242,Pikky Ya France, b Kumara,5,1.0,2.0,0.0,0.0,50.00,,,,,,,,2547443,894,Namibia,1,Namibia Innings
+10,11.0,990681,Bernard Scholtz,run out (Nissanka),4,0.0,2.0,0.0,0.0,0.00,,,,,,,,2547443,894,Namibia,1,Namibia Innings
+0,,1871097,Chamika Karunaratne,,,,,0.0,0.0,,4,0.0,17.0,1.0,4.25,12.0,1,2547443,894,Namibia,1,Namibia Innings
+1,,1656468,Dushmantha Chameera,,,,,1.0,0.0,,4,0.0,19.0,1.0,4.75,11.0,1,2547443,894,Namibia,1,Namibia Innings
+2,,3414960,Maheesh Theekshana,,,,,0.0,2.0,,4,0.0,25.0,3.0,6.25,12.0,2,2547443,894,Namibia,1,Namibia Innings
+3,,2353137,Lahiru Kumara,,,,,0.0,0.0,,3.3,0.0,9.0,2.0,2.57,12.0,0,2547443,894,Namibia,1,Namibia Innings
+4,,2353149,Wanindu Hasaranga de Silva,,,,,2.0,0.0,,4,0.0,24.0,2.0,6.00,11.0,1,2547443,894,Namibia,1,Namibia Innings
+0,1.0,3085977,Pathum Nissanka,lbw b Scholtz,17,5.0,6.0,0.0,0.0,83.33,,,,,,,,2547443,894,Namibia,2,Sri Lanka Innings
+1,2.0,901905,Kusal Perera,c Smit b Trumpelmann,11,11.0,8.0,2.0,0.0,137.50,,,,,,,,2547443,894,Namibia,2,Sri Lanka Innings
+2,3.0,901896,Dinesh Chandimal,c Green b Smit,17,5.0,12.0,0.0,0.0,41.66,,,,,,,,2547443,894,Namibia,2,Sri Lanka Innings
+3,4.0,2353119,Avishka Fernando,not out,-,30.0,28.0,0.0,2.0,107.14,,,,,,,,2547443,894,Namibia,2,Sri Lanka Innings
+4,5.0,1027869,Bhanuka Rajapaksa,not out,-,42.0,27.0,4.0,2.0,155.55,,,,,,,,2547443,894,Namibia,2,Sri Lanka Innings
+0,,1311960,Dasun Shanaka,,,,,,,,,,,,,,,2547443,894,Namibia,2,Sri Lanka Innings
+1,,1871097,Chamika Karunaratne,,,,,,,,,,,,,,,2547443,894,Namibia,2,Sri Lanka Innings
+2,,2353149,Wanindu Hasaranga de Silva,,,,,,,,,,,,,,,2547443,894,Namibia,2,Sri Lanka Innings
+3,,1656468,Dushmantha Chameera,,,,,,,,,,,,,,,2547443,894,Namibia,2,Sri Lanka Innings
+4,,3414960,Maheesh Theekshana,,,,,,,,,,,,,,,2547443,894,Namibia,2,Sri Lanka Innings
+5,,2353137,Lahiru Kumara,,,,,,,,,,,,,,,2547443,894,Namibia,2,Sri Lanka Innings
+0,,663432,David Wiese,,,,,0.0,0.0,,2,0.0,11.0,0.0,5.50,3.0,1,2547443,894,Namibia,2,Sri Lanka Innings
+1,,2094963,Ruben Trumpelmann,,,,,2.0,1.0,,3,0.0,27.0,1.0,9.00,3.0,0,2547443,894,Namibia,2,Sri Lanka Innings
+2,,990681,Bernard Scholtz,,,,,0.0,1.0,,3,0.0,16.0,1.0,5.33,9.0,1,2547443,894,Namibia,2,Sri Lanka Innings
+3,,1661475,JJ Smit,,,,,0.0,1.0,,1,0.0,7.0,1.0,7.00,4.0,0,2547443,894,Namibia,2,Sri Lanka Innings
+4,,925242,Pikky Ya France,,,,,1.0,0.0,,1,0.0,6.0,0.0,6.00,3.0,0,2547443,894,Namibia,2,Sri Lanka Innings
+5,,3214431,Jan Nicol Loftie-Eaton,,,,,1.0,0.0,,1,0.0,7.0,0.0,7.00,2.0,0,2547443,894,Namibia,2,Sri Lanka Innings
+6,,1447446,Jan Frylinck,,,,,2.0,1.0,,1.3,0.0,17.0,0.0,11.33,4.0,0,2547443,894,Namibia,2,Sri Lanka Innings
+7,,1557222,Gerhard Erasmus,,,,,0.0,0.0,,1,0.0,5.0,0.0,5.00,2.0,1,2547443,894,Namibia,2,Sri Lanka Innings
+0,1.0,2015427,George Munsey,c Siaka b Soper,20,15.0,10.0,3.0,0.0,150.00,,,,,,,,2547445,894,Papua New Guinea,1,Scotland Innings
+1,2.0,76350,Kyle Coetzer, b Morea,13,6.0,6.0,1.0,0.0,100.00,,,,,,,,2547445,894,Papua New Guinea,1,Scotland Innings
+2,3.0,1251816,Matthew Cross,c Amini b Atai,52,45.0,36.0,2.0,2.0,125.00,,,,,,,,2547445,894,Papua New Guinea,1,Scotland Innings
+3,4.0,76482,Richie Berrington,c Amini b Soper,66,70.0,49.0,6.0,3.0,142.85,,,,,,,,2547445,894,Papua New Guinea,1,Scotland Innings
+4,5.0,697317,Calum MacLeod,c Morea b Soper,19,10.0,11.0,1.0,0.0,90.90,,,,,,,,2547445,894,Papua New Guinea,1,Scotland Innings
+5,6.0,1244910,Michael Leask,run out (Vala/Doriga),12,9.0,4.0,0.0,1.0,225.00,,,,,,,,2547445,894,Papua New Guinea,1,Scotland Innings
+6,7.0,2619609,Chris Greaves,c Siaka b Morea,7,2.0,3.0,0.0,0.0,66.66,,,,,,,,2547445,894,Papua New Guinea,1,Scotland Innings
+7,8.0,1977255,Mark Watt, b Morea,6,0.0,1.0,0.0,0.0,0.00,,,,,,,,2547445,894,Papua New Guinea,1,Scotland Innings
+8,9.0,1221807,Josh Davey,c Siaka b Morea,1,0.0,1.0,0.0,0.0,0.00,,,,,,,,2547445,894,Papua New Guinea,1,Scotland Innings
+9,10.0,1197789,Alasdair Evans,not out,2,0.0,0.0,0.0,0.0,-,,,,,,,,2547445,894,Papua New Guinea,1,Scotland Innings
+0,,2422617,Brad Wheal,,,,,,,,,,,,,,,2547445,894,Papua New Guinea,1,Scotland Innings
+0,,1938555,Nosaina Pokana,,,,,4.0,1.0,,4,0.0,37.0,0.0,9.25,6.0,1,2547445,894,Papua New Guinea,1,Scotland Innings
+1,,998952,Charles Amini,,,,,4.0,1.0,,4,0.0,41.0,0.0,10.25,3.0,1,2547445,894,Papua New Guinea,1,Scotland Innings
+2,,1572777,Kabua Morea,,,,,4.0,1.0,,4,0.0,31.0,4.0,7.75,13.0,2,2547445,894,Papua New Guinea,1,Scotland Innings
+3,,1722873,Chad Soper,,,,,1.0,1.0,,4,0.0,24.0,3.0,6.00,11.0,0,2547445,894,Papua New Guinea,1,Scotland Innings
+4,,1322982,Lega Siaka,,,,,0.0,1.0,,1,0.0,8.0,0.0,8.00,3.0,0,2547445,894,Papua New Guinea,1,Scotland Innings
+5,,3345111,Simon Atai,,,,,0.0,1.0,,3,0.0,20.0,1.0,6.66,4.0,0,2547445,894,Papua New Guinea,1,Scotland Innings
+0,1.0,908547,Tony Ura, b Davey,-,2.0,3.0,0.0,0.0,66.66,,,,,,,,2547445,894,Papua New Guinea,2,Papua New Guinea Innings
+1,2.0,1322982,Lega Siaka,c Cross b Wheal,-,9.0,13.0,1.0,0.0,69.23,,,,,,,,2547445,894,Papua New Guinea,2,Papua New Guinea Innings
+2,3.0,75180,Assad Vala,c Wheal b Evans,-,18.0,11.0,4.0,0.0,163.63,,,,,,,,2547445,894,Papua New Guinea,2,Papua New Guinea Innings
+3,4.0,998952,Charles Amini,run out (Leask/Cross),-,1.0,3.0,0.0,0.0,33.33,,,,,,,,2547445,894,Papua New Guinea,2,Papua New Guinea Innings
+4,5.0,1261293,Sese Bau,c Wheal b Greaves,-,24.0,23.0,1.0,1.0,104.34,,,,,,,,2547445,894,Papua New Guinea,2,Papua New Guinea Innings
+5,6.0,3345111,Simon Atai,c Berrington b Davey,-,2.0,3.0,0.0,0.0,66.66,,,,,,,,2547445,894,Papua New Guinea,2,Papua New Guinea Innings
+6,7.0,1572771,Norman Vanua,c Cross b Davey,-,47.0,37.0,2.0,2.0,127.02,,,,,,,,2547445,894,Papua New Guinea,2,Papua New Guinea Innings
+7,8.0,1938531,Kiplin Doriga,st Cross b Watt,-,18.0,11.0,1.0,1.0,163.63,,,,,,,,2547445,894,Papua New Guinea,2,Papua New Guinea Innings
+8,9.0,1722873,Chad Soper,c Cross b Davey,-,16.0,11.0,1.0,1.0,145.45,,,,,,,,2547445,894,Papua New Guinea,2,Papua New Guinea Innings
+9,10.0,1938555,Nosaina Pokana,run out (Evans/Wheal),-,1.0,1.0,0.0,0.0,100.00,,,,,,,,2547445,894,Papua New Guinea,2,Papua New Guinea Innings
+10,11.0,1572777,Kabua Morea,not out,-,6.0,1.0,0.0,1.0,600.00,,,,,,,,2547445,894,Papua New Guinea,2,Papua New Guinea Innings
+0,,2422617,Brad Wheal,,,,,2.0,3.0,,4,0.0,41.0,1.0,10.25,7.0,0,2547445,894,Papua New Guinea,2,Papua New Guinea Innings
+1,,1221807,Josh Davey,,,,,0.0,1.0,,3.3,0.0,18.0,4.0,5.14,10.0,0,2547445,894,Papua New Guinea,2,Papua New Guinea Innings
+2,,1197789,Alasdair Evans,,,,,4.0,0.0,,3,0.0,22.0,1.0,7.33,9.0,0,2547445,894,Papua New Guinea,2,Papua New Guinea Innings
+3,,1977255,Mark Watt,,,,,0.0,1.0,,4,0.0,23.0,1.0,5.75,9.0,1,2547445,894,Papua New Guinea,2,Papua New Guinea Innings
+4,,1244910,Michael Leask,,,,,1.0,0.0,,2,0.0,11.0,0.0,5.50,5.0,0,2547445,894,Papua New Guinea,2,Papua New Guinea Innings
+5,,2619609,Chris Greaves,,,,,3.0,1.0,,3,0.0,31.0,1.0,10.33,5.0,1,2547445,894,Papua New Guinea,2,Papua New Guinea Innings
+0,1.0,2970255,Mohammad Naim,c Ayaan Khan b Kaleemullah,97,64.0,50.0,3.0,4.0,128.00,,,,,,,,2547447,894,Oman,1,Bangladesh Innings
+1,2.0,1610820,Liton Das,lbw b Bilal Khan,18,6.0,7.0,0.0,0.0,85.71,,,,,,,,2547447,894,Oman,1,Bangladesh Innings
+2,3.0,2499273,Mahedi Hasan,c &amp; b Fayyaz Butt,11,0.0,4.0,0.0,0.0,0.00,,,,,,,,2547447,894,Oman,1,Bangladesh Innings
+3,4.0,168441,Shakib Al Hasan,run out (Aqib Ilyas),47,42.0,29.0,6.0,0.0,144.82,,,,,,,,2547447,894,Oman,1,Bangladesh Innings
+4,5.0,1232307,Nurul Hasan,c Sandeep Goud b Zeeshan Maqsood,10,3.0,4.0,0.0,0.0,75.00,,,,,,,,2547447,894,Oman,1,Bangladesh Innings
+5,6.0,2807997,Afif Hossain,c Jatinder Singh b Kaleemullah,11,1.0,5.0,0.0,0.0,20.00,,,,,,,,2547447,894,Oman,1,Bangladesh Innings
+6,7.0,168087,Mahmudullah, b Bilal Khan,25,17.0,10.0,1.0,1.0,170.00,,,,,,,,2547447,894,Oman,1,Bangladesh Innings
+7,8.0,168099,Mushfiqur Rahim,c Naseem Khushi b Fayyaz Butt,12,6.0,4.0,1.0,0.0,150.00,,,,,,,,2547447,894,Oman,1,Bangladesh Innings
+8,9.0,1887222,Mohammad Saifuddin,c Jatinder Singh b Fayyaz Butt,2,0.0,1.0,0.0,0.0,0.00,,,,,,,,2547447,894,Oman,1,Bangladesh Innings
+9,10.0,1615530,Taskin Ahmed,not out,11,1.0,3.0,0.0,0.0,33.33,,,,,,,,2547447,894,Oman,1,Bangladesh Innings
+10,11.0,992718,Mustafizur Rahman,c Zeeshan Maqsood b Bilal Khan,5,2.0,3.0,0.0,0.0,66.66,,,,,,,,2547447,894,Oman,1,Bangladesh Innings
+0,,2813871,Bilal Khan,,,,,0.0,1.0,,4,0.0,18.0,3.0,4.50,15.0,2,2547447,894,Oman,1,Bangladesh Innings
+1,,3231933,Kaleemullah,,,,,3.0,1.0,,4,0.0,30.0,2.0,7.50,10.0,0,2547447,894,Oman,1,Bangladesh Innings
+2,,1310259,Fayyaz Butt,,,,,2.0,1.0,,4,0.0,30.0,3.0,7.50,9.0,1,2547447,894,Oman,1,Bangladesh Innings
+3,,125964,Mohammad Nadeem,,,,,2.0,2.0,,4,0.0,35.0,0.0,8.75,7.0,1,2547447,894,Oman,1,Bangladesh Innings
+4,,2821791,Aqib Ilyas,,,,,2.0,0.0,,2,0.0,16.0,0.0,8.00,3.0,0,2547447,894,Oman,1,Bangladesh Innings
+5,,1755261,Zeeshan Maqsood,,,,,2.0,0.0,,2,0.0,17.0,1.0,8.50,3.0,0,2547447,894,Oman,1,Bangladesh Innings
+0,1.0,2821791,Aqib Ilyas,lbw b Mustafizur Rahman,10,6.0,6.0,1.0,0.0,100.00,,,,,,,,2547447,894,Oman,2,Oman Innings
+1,2.0,923280,Jatinder Singh,c Liton Das b Shakib Al Hasan,69,40.0,33.0,4.0,1.0,121.21,,,,,,,,2547447,894,Oman,2,Oman Innings
+2,3.0,3830169,Kashyap Prajapati,c Nurul Hasan b Mustafizur Rahman,23,21.0,18.0,1.0,2.0,116.66,,,,,,,,2547447,894,Oman,2,Oman Innings
+3,4.0,1755261,Zeeshan Maqsood,c Mushfiqur Rahim b Mahedi Hasan,28,12.0,16.0,0.0,1.0,75.00,,,,,,,,2547447,894,Oman,2,Oman Innings
+4,5.0,2868969,Ayaan Khan,c Mahmudullah b Shakib Al Hasan,27,9.0,13.0,0.0,0.0,69.23,,,,,,,,2547447,894,Oman,2,Oman Innings
+5,6.0,3522084,Sandeep Goud,c Mushfiqur Rahim b Mohammad Saifuddin,15,4.0,8.0,0.0,0.0,50.00,,,,,,,,2547447,894,Oman,2,Oman Innings
+6,7.0,3231942,Naseem Khushi,c Mahmudullah b Shakib Al Hasan,8,4.0,6.0,0.0,0.0,66.66,,,,,,,,2547447,894,Oman,2,Oman Innings
+7,8.0,3231933,Kaleemullah,c Nurul Hasan b Mustafizur Rahman,8,5.0,5.0,1.0,0.0,100.00,,,,,,,,2547447,894,Oman,2,Oman Innings
+8,9.0,125964,Mohammad Nadeem,not out,15,14.0,12.0,1.0,1.0,116.66,,,,,,,,2547447,894,Oman,2,Oman Innings
+9,10.0,1310259,Fayyaz Butt,c Mushfiqur Rahim b Mustafizur Rahman,2,0.0,2.0,0.0,0.0,0.00,,,,,,,,2547447,894,Oman,2,Oman Innings
+10,11.0,2813871,Bilal Khan,not out,8,0.0,1.0,0.0,0.0,0.00,,,,,,,,2547447,894,Oman,2,Oman Innings
+0,,1615530,Taskin Ahmed,,,,,2.0,1.0,,4,0.0,31.0,0.0,7.75,9.0,1,2547447,894,Oman,2,Oman Innings
+1,,992718,Mustafizur Rahman,,,,,2.0,3.0,,4,0.0,36.0,4.0,9.00,17.0,8,2547447,894,Oman,2,Oman Innings
+2,,1887222,Mohammad Saifuddin,,,,,1.0,0.0,,4,0.0,16.0,1.0,4.00,13.0,0,2547447,894,Oman,2,Oman Innings
+3,,168441,Shakib Al Hasan,,,,,3.0,1.0,,4,0.0,28.0,3.0,7.00,11.0,0,2547447,894,Oman,2,Oman Innings
+4,,2499273,Mahedi Hasan,,,,,0.0,0.0,,4,0.0,14.0,1.0,3.50,12.0,0,2547447,894,Oman,2,Oman Innings
+0,1.0,1929603,Max O'Dowd,run out (Erasmus/Wiese),90,70.0,56.0,6.0,1.0,125.00,,,,,,,,2547449,894,Namibia,1,Netherlands Innings
+1,2.0,701148,Stephan Myburgh,c Baard b Frylinck,26,17.0,16.0,2.0,0.0,106.25,,,,,,,,2547449,894,Namibia,1,Netherlands Innings
+2,3.0,143562,Roelof van der Merwe,c Scholtz b Wiese,8,6.0,4.0,1.0,0.0,150.00,,,,,,,,2547449,894,Namibia,1,Netherlands Innings
+3,4.0,1139334,Colin Ackermann,c Erasmus b Frylinck,46,35.0,32.0,1.0,1.0,109.37,,,,,,,,2547449,894,Namibia,1,Netherlands Innings
+4,5.0,3381963,Scott Edwards,not out,14,21.0,11.0,2.0,1.0,190.90,,,,,,,,2547449,894,Namibia,1,Netherlands Innings
+5,6.0,1321578,Logan van Beek,not out,2,2.0,1.0,0.0,0.0,200.00,,,,,,,,2547449,894,Namibia,1,Netherlands Innings
+0,,3108585,Bas de Leede,,,,,,,,,,,,,,,2547449,894,Namibia,1,Netherlands Innings
+1,,142992,Ryan ten Doeschate,,,,,,,,,,,,,,,2547449,894,Namibia,1,Netherlands Innings
+2,,625983,Pieter Seelaar,,,,,,,,,,,,,,,2547449,894,Namibia,1,Netherlands Innings
+3,,1001358,Timm van der Gugten,,,,,,,,,,,,,,,2547449,894,Namibia,1,Netherlands Innings
+4,,3314121,Fred Klaassen,,,,,,,,,,,,,,,2547449,894,Namibia,1,Netherlands Innings
+0,,990681,Bernard Scholtz,,,,,3.0,0.0,,4,0.0,31.0,0.0,7.75,5.0,1,2547449,894,Namibia,1,Netherlands Innings
+1,,663432,David Wiese,,,,,4.0,0.0,,4,0.0,32.0,1.0,8.00,7.0,0,2547449,894,Namibia,1,Netherlands Innings
+2,,2094963,Ruben Trumpelmann,,,,,2.0,2.0,,4,0.0,32.0,0.0,8.00,11.0,2,2547449,894,Namibia,1,Netherlands Innings
+3,,1447446,Jan Frylinck,,,,,2.0,1.0,,4,0.0,36.0,2.0,9.00,7.0,2,2547449,894,Namibia,1,Netherlands Innings
+4,,1661475,JJ Smit,,,,,1.0,0.0,,4,0.0,28.0,0.0,7.00,4.0,2,2547449,894,Namibia,1,Netherlands Innings
+0,1.0,1313793,Stephan Baard, b Seelaar,39,19.0,20.0,3.0,0.0,95.00,,,,,,,,2547449,894,Namibia,2,Namibia Innings
+1,2.0,1790004,Zane Green, b Klaassen,19,15.0,12.0,3.0,0.0,125.00,,,,,,,,2547449,894,Namibia,2,Namibia Innings
+2,3.0,948318,Craig Williams, b Ackermann,11,11.0,13.0,1.0,0.0,84.61,,,,,,,,2547449,894,Namibia,2,Namibia Innings
+3,4.0,1557222,Gerhard Erasmus,c Edwards b van der Gugten,44,32.0,22.0,4.0,1.0,145.45,,,,,,,,2547449,894,Namibia,2,Namibia Innings
+4,5.0,663432,David Wiese,not out,51,66.0,40.0,4.0,5.0,165.00,,,,,,,,2547449,894,Namibia,2,Namibia Innings
+5,6.0,1661475,JJ Smit,not out,14,14.0,8.0,2.0,0.0,175.00,,,,,,,,2547449,894,Namibia,2,Namibia Innings
+0,,2501343,Michael van Lingen,,,,,,,,,,,,,,,2547449,894,Namibia,2,Namibia Innings
+1,,1447446,Jan Frylinck,,,,,,,,,,,,,,,2547449,894,Namibia,2,Namibia Innings
+2,,3214431,Jan Nicol Loftie-Eaton,,,,,,,,,,,,,,,2547449,894,Namibia,2,Namibia Innings
+3,,2094963,Ruben Trumpelmann,,,,,,,,,,,,,,,2547449,894,Namibia,2,Namibia Innings
+4,,990681,Bernard Scholtz,,,,,,,,,,,,,,,2547449,894,Namibia,2,Namibia Innings
+0,,3314121,Fred Klaassen,,,,,1.0,0.0,,4,0.0,14.0,1.0,3.50,15.0,1,2547449,894,Namibia,2,Namibia Innings
+1,,1139334,Colin Ackermann,,,,,3.0,2.0,,3,0.0,32.0,1.0,10.66,9.0,1,2547449,894,Namibia,2,Namibia Innings
+2,,1321578,Logan van Beek,,,,,6.0,0.0,,4,0.0,39.0,0.0,9.75,9.0,3,2547449,894,Namibia,2,Namibia Innings
+3,,1001358,Timm van der Gugten,,,,,4.0,1.0,,3,0.0,32.0,1.0,10.66,5.0,0,2547449,894,Namibia,2,Namibia Innings
+4,,143562,Roelof van der Merwe,,,,,0.0,2.0,,2,0.0,22.0,0.0,11.00,2.0,0,2547449,894,Namibia,2,Namibia Innings
+5,,625983,Pieter Seelaar,,,,,0.0,1.0,,2,1.0,8.0,1.0,4.00,9.0,0,2547449,894,Namibia,2,Namibia Innings
+6,,3108585,Bas de Leede,,,,,3.0,0.0,,1,0.0,15.0,0.0,15.00,1.0,0,2547449,894,Namibia,2,Namibia Innings
+0,1.0,3085977,Pathum Nissanka,c Rock b Little,105,61.0,47.0,6.0,1.0,129.78,,,,,,,,2547451,894,Ireland,1,Sri Lanka Innings
+1,2.0,901905,Kusal Perera,c Delany b Stirling,7,0.0,1.0,0.0,0.0,0.00,,,,,,,,2547451,894,Ireland,1,Sri Lanka Innings
+2,3.0,901896,Dinesh Chandimal, b Little,6,6.0,6.0,1.0,0.0,100.00,,,,,,,,2547451,894,Ireland,1,Sri Lanka Innings
+3,4.0,2353119,Avishka Fernando, b Little,2,0.0,1.0,0.0,0.0,0.00,,,,,,,,2547451,894,Ireland,1,Sri Lanka Innings
+4,5.0,2353149,Wanindu Hasaranga de Silva,c Young b Adair,70,71.0,47.0,10.0,1.0,151.06,,,,,,,,2547451,894,Ireland,1,Sri Lanka Innings
+5,6.0,1027869,Bhanuka Rajapaksa,c Tector b Little,11,1.0,3.0,0.0,0.0,33.33,,,,,,,,2547451,894,Ireland,1,Sri Lanka Innings
+6,7.0,1311960,Dasun Shanaka,not out,18,21.0,11.0,2.0,1.0,190.90,,,,,,,,2547451,894,Ireland,1,Sri Lanka Innings
+7,8.0,1871097,Chamika Karunaratne, b Adair,5,2.0,3.0,0.0,0.0,66.66,,,,,,,,2547451,894,Ireland,1,Sri Lanka Innings
+8,9.0,1656468,Dushmantha Chameera,not out,3,1.0,1.0,0.0,0.0,100.00,,,,,,,,2547451,894,Ireland,1,Sri Lanka Innings
+0,,3414960,Maheesh Theekshana,,,,,,,,,,,,,,,2547451,894,Ireland,1,Sri Lanka Innings
+1,,2353137,Lahiru Kumara,,,,,,,,,,,,,,,2547451,894,Ireland,1,Sri Lanka Innings
+0,,910293,Paul Stirling,,,,,0.0,0.0,,1,0.0,4.0,1.0,4.00,2.0,0,2547451,894,Ireland,1,Sri Lanka Innings
+1,,2784213,Josh Little,,,,,4.0,0.0,,4,0.0,23.0,4.0,5.75,15.0,2,2547451,894,Ireland,1,Sri Lanka Innings
+2,,1093041,Craig Young,,,,,0.0,1.0,,4,0.0,24.0,0.0,6.00,7.0,0,2547451,894,Ireland,1,Sri Lanka Innings
+3,,1579335,Mark Adair,,,,,5.0,1.0,,4,0.0,35.0,2.0,8.75,10.0,0,2547451,894,Ireland,1,Sri Lanka Innings
+4,,3015783,Simi Singh,,,,,7.0,0.0,,3,0.0,41.0,0.0,13.66,1.0,0,2547451,894,Ireland,1,Sri Lanka Innings
+5,,1787775,Curtis Campher,,,,,3.0,1.0,,4,0.0,38.0,0.0,9.50,5.0,0,2547451,894,Ireland,1,Sri Lanka Innings
+0,1.0,910293,Paul Stirling,c Kumara b Theekshana,15,7.0,7.0,1.0,0.0,100.00,,,,,,,,2547451,894,Ireland,2,Ireland Innings
+1,2.0,73827,Kevin O'Brien,c Theekshana b Karunaratne,6,5.0,3.0,1.0,0.0,166.66,,,,,,,,2547451,894,Ireland,2,Ireland Innings
+2,3.0,910281,Andy Balbirnie,c Fernando b Kumara,73,41.0,39.0,2.0,2.0,105.12,,,,,,,,2547451,894,Ireland,2,Ireland Innings
+3,4.0,3298149,Gareth Delany, b de Silva,10,2.0,4.0,0.0,0.0,50.00,,,,,,,,2547451,894,Ireland,2,Ireland Innings
+4,5.0,1787775,Curtis Campher, b Theekshana,36,24.0,28.0,2.0,0.0,85.71,,,,,,,,2547451,894,Ireland,2,Ireland Innings
+5,6.0,2884233,Harry Tector,c Perera b Kumara,7,3.0,6.0,0.0,0.0,50.00,,,,,,,,2547451,894,Ireland,2,Ireland Innings
+6,7.0,3337617,Neil Rock,st Perera b Theekshana,6,1.0,3.0,0.0,0.0,33.33,,,,,,,,2547451,894,Ireland,2,Ireland Innings
+7,8.0,1579335,Mark Adair,run out (Chameera),6,2.0,3.0,0.0,0.0,66.66,,,,,,,,2547451,894,Ireland,2,Ireland Innings
+8,9.0,3015783,Simi Singh,not out,15,5.0,9.0,0.0,0.0,55.55,,,,,,,,2547451,894,Ireland,2,Ireland Innings
+9,10.0,1093041,Craig Young, b Chameera,8,1.0,6.0,0.0,0.0,16.66,,,,,,,,2547451,894,Ireland,2,Ireland Innings
+10,11.0,2784213,Josh Little, b Karunaratne,7,1.0,3.0,0.0,0.0,33.33,,,,,,,,2547451,894,Ireland,2,Ireland Innings
+0,,1871097,Chamika Karunaratne,,,,,2.0,1.0,,3.3,0.0,27.0,2.0,7.71,8.0,2,2547451,894,Ireland,2,Ireland Innings
+1,,1656468,Dushmantha Chameera,,,,,3.0,0.0,,3,0.0,16.0,1.0,5.33,11.0,0,2547451,894,Ireland,2,Ireland Innings
+2,,3414960,Maheesh Theekshana,,,,,1.0,0.0,,4,0.0,17.0,3.0,4.25,12.0,0,2547451,894,Ireland,2,Ireland Innings
+3,,2353137,Lahiru Kumara,,,,,0.0,1.0,,4,0.0,22.0,2.0,5.50,12.0,0,2547451,894,Ireland,2,Ireland Innings
+4,,2353149,Wanindu Hasaranga de Silva,,,,,0.0,0.0,,4,0.0,12.0,1.0,3.00,14.0,0,2547451,894,Ireland,2,Ireland Innings
+0,1.0,2970255,Mohammad Naim,c Bau b Morea,-,0.0,2.0,0.0,0.0,0.00,,,,,,,,2547453,894,Bangladesh,1,Bangladesh Innings
+1,2.0,1610820,Liton Das,c Bau b Vala,-,29.0,23.0,1.0,1.0,126.08,,,,,,,,2547453,894,Bangladesh,1,Bangladesh Innings
+2,3.0,168441,Shakib Al Hasan,c Amini b Vala,-,46.0,37.0,0.0,3.0,124.32,,,,,,,,2547453,894,Bangladesh,1,Bangladesh Innings
+3,4.0,168099,Mushfiqur Rahim,c Hiri b Atai,-,5.0,8.0,0.0,0.0,62.50,,,,,,,,2547453,894,Bangladesh,1,Bangladesh Innings
+4,5.0,168087,Mahmudullah,c Soper b Ravu,-,50.0,28.0,3.0,3.0,178.57,,,,,,,,2547453,894,Bangladesh,1,Bangladesh Innings
+5,6.0,2807997,Afif Hossain,c Ravu b Morea,-,21.0,14.0,3.0,0.0,150.00,,,,,,,,2547453,894,Bangladesh,1,Bangladesh Innings
+6,7.0,1232307,Nurul Hasan,c Bau b Ravu,-,0.0,1.0,0.0,0.0,0.00,,,,,,,,2547453,894,Bangladesh,1,Bangladesh Innings
+7,8.0,1887222,Mohammad Saifuddin,not out,-,19.0,6.0,1.0,2.0,316.66,,,,,,,,2547453,894,Bangladesh,1,Bangladesh Innings
+8,9.0,2499273,Mahedi Hasan,not out,-,2.0,3.0,0.0,0.0,66.66,,,,,,,,2547453,894,Bangladesh,1,Bangladesh Innings
+0,,1615530,Taskin Ahmed,,,,,,,,,,,,,,,2547453,894,Bangladesh,1,Bangladesh Innings
+1,,992718,Mustafizur Rahman,,,,,,,,,,,,,,,2547453,894,Bangladesh,1,Bangladesh Innings
+0,,1572777,Kabua Morea,,,,,2.0,0.0,,4,0.0,26.0,2.0,6.50,6.0,1,2547453,894,Bangladesh,1,Bangladesh Innings
+1,,3367683,Damien Ravu,,,,,4.0,1.0,,4,0.0,40.0,2.0,10.00,6.0,4,2547453,894,Bangladesh,1,Bangladesh Innings
+2,,1722873,Chad Soper,,,,,2.0,5.0,,4,0.0,53.0,0.0,13.25,6.0,2,2547453,894,Bangladesh,1,Bangladesh Innings
+3,,1261293,Sese Bau,,,,,0.0,1.0,,2,0.0,20.0,0.0,10.00,1.0,1,2547453,894,Bangladesh,1,Bangladesh Innings
+4,,75180,Assad Vala,,,,,0.0,2.0,,3,0.0,26.0,2.0,8.66,5.0,0,2547453,894,Bangladesh,1,Bangladesh Innings
+5,,998952,Charles Amini,,,,,0.0,0.0,,2,0.0,9.0,0.0,4.50,3.0,0,2547453,894,Bangladesh,1,Bangladesh Innings
+6,,3345111,Simon Atai,,,,,0.0,0.0,,1,0.0,6.0,1.0,6.00,1.0,0,2547453,894,Bangladesh,1,Bangladesh Innings
+0,1.0,1322982,Lega Siaka,lbw b Mohammad Saifuddin,-,5.0,10.0,0.0,0.0,50.00,,,,,,,,2547453,894,Bangladesh,2,Papua New Guinea Innings
+1,2.0,75180,Assad Vala,c Nurul Hasan b Taskin Ahmed,-,6.0,9.0,0.0,0.0,66.66,,,,,,,,2547453,894,Bangladesh,2,Papua New Guinea Innings
+2,3.0,998952,Charles Amini,c Mohammad Naim b Shakib Al Hasan,-,1.0,2.0,0.0,0.0,50.00,,,,,,,,2547453,894,Bangladesh,2,Papua New Guinea Innings
+3,4.0,1261293,Sese Bau,c Mohammad Naim b Shakib Al Hasan,-,7.0,21.0,0.0,0.0,33.33,,,,,,,,2547453,894,Bangladesh,2,Papua New Guinea Innings
+4,5.0,3345111,Simon Atai,c Mahedi Hasan b Shakib Al Hasan,-,0.0,2.0,0.0,0.0,0.00,,,,,,,,2547453,894,Bangladesh,2,Papua New Guinea Innings
+5,6.0,1938537,Hiri Hiri,c Nurul Hasan b Shakib Al Hasan,-,8.0,15.0,1.0,0.0,53.33,,,,,,,,2547453,894,Bangladesh,2,Papua New Guinea Innings
+6,7.0,1572771,Norman Vanua,c Mushfiqur Rahim b Mahedi Hasan,-,0.0,2.0,0.0,0.0,0.00,,,,,,,,2547453,894,Bangladesh,2,Papua New Guinea Innings
+7,8.0,1938531,Kiplin Doriga,not out,-,46.0,34.0,2.0,2.0,135.29,,,,,,,,2547453,894,Bangladesh,2,Papua New Guinea Innings
+8,9.0,1722873,Chad Soper, b Mohammad Saifuddin,-,11.0,12.0,0.0,1.0,91.66,,,,,,,,2547453,894,Bangladesh,2,Papua New Guinea Innings
+9,10.0,1572777,Kabua Morea,run out (Afif Hossain/Nurul Hasan),-,3.0,6.0,0.0,0.0,50.00,,,,,,,,2547453,894,Bangladesh,2,Papua New Guinea Innings
+10,11.0,3367683,Damien Ravu,c Nurul Hasan b Taskin Ahmed,-,5.0,5.0,1.0,0.0,100.00,,,,,,,,2547453,894,Bangladesh,2,Papua New Guinea Innings
+0,,1887222,Mohammad Saifuddin,,,,,0.0,0.0,,4,0.0,21.0,2.0,5.25,9.0,3,2547453,894,Bangladesh,2,Papua New Guinea Innings
+1,,992718,Mustafizur Rahman,,,,,1.0,2.0,,4,0.0,34.0,0.0,8.50,6.0,1,2547453,894,Bangladesh,2,Papua New Guinea Innings
+2,,1615530,Taskin Ahmed,,,,,2.0,0.0,,3.3,1.0,12.0,2.0,3.42,16.0,0,2547453,894,Bangladesh,2,Papua New Guinea Innings
+3,,168441,Shakib Al Hasan,,,,,0.0,0.0,,4,0.0,9.0,4.0,2.25,15.0,0,2547453,894,Bangladesh,2,Papua New Guinea Innings
+4,,2499273,Mahedi Hasan,,,,,1.0,1.0,,4,0.0,20.0,1.0,5.00,14.0,0,2547453,894,Bangladesh,2,Papua New Guinea Innings
+0,1.0,2821791,Aqib Ilyas,c Munsey b Leask,42,37.0,35.0,3.0,2.0,105.71,,,,,,,,2547455,894,Oman,1,Oman Innings
+1,2.0,923280,Jatinder Singh,run out (Watt/Cross),5,0.0,1.0,0.0,0.0,0.00,,,,,,,,2547455,894,Oman,1,Oman Innings
+2,3.0,3830169,Kashyap Prajapati,c Munsey b Sharif,12,3.0,8.0,0.0,0.0,37.50,,,,,,,,2547455,894,Oman,1,Oman Innings
+3,4.0,125964,Mohammad Nadeem,c Berrington b Watt,41,25.0,21.0,0.0,2.0,119.04,,,,,,,,2547455,894,Oman,1,Oman Innings
+4,5.0,1755261,Zeeshan Maqsood,c MacLeod b Davey,49,34.0,30.0,3.0,1.0,113.33,,,,,,,,2547455,894,Oman,1,Oman Innings
+5,6.0,3522084,Sandeep Goud,c Greaves b Sharif,13,5.0,8.0,0.0,0.0,62.50,,,,,,,,2547455,894,Oman,1,Oman Innings
+6,7.0,3231942,Naseem Khushi,c MacLeod b Leask,5,2.0,4.0,0.0,0.0,50.00,,,,,,,,2547455,894,Oman,1,Oman Innings
+7,8.0,3470082,Suraj Kumar,c Wheal b Davey,10,4.0,7.0,0.0,0.0,57.14,,,,,,,,2547455,894,Oman,1,Oman Innings
+8,9.0,1310259,Fayyaz Butt,c Greaves b Davey,13,7.0,6.0,1.0,0.0,116.66,,,,,,,,2547455,894,Oman,1,Oman Innings
+9,10.0,2813871,Bilal Khan,run out (MacLeod/Davey),2,1.0,1.0,0.0,0.0,100.00,,,,,,,,2547455,894,Oman,1,Oman Innings
+10,11.0,1755255,Khawar Ali,not out,2,0.0,0.0,0.0,0.0,-,,,,,,,,2547455,894,Oman,1,Oman Innings
+0,,2422617,Brad Wheal,,,,,1.0,2.0,,3,0.0,24.0,0.0,8.00,8.0,0,2547455,894,Oman,1,Oman Innings
+1,,1221807,Josh Davey,,,,,2.0,1.0,,4,0.0,25.0,3.0,6.25,11.0,0,2547455,894,Oman,1,Oman Innings
+2,,1244922,Safyaan Sharif,,,,,2.0,1.0,,4,0.0,25.0,2.0,6.25,11.0,0,2547455,894,Oman,1,Oman Innings
+3,,1977255,Mark Watt,,,,,1.0,1.0,,4,0.0,23.0,1.0,5.75,9.0,0,2547455,894,Oman,1,Oman Innings
+4,,2619609,Chris Greaves,,,,,0.0,0.0,,2,0.0,9.0,0.0,4.50,5.0,1,2547455,894,Oman,1,Oman Innings
+5,,1244910,Michael Leask,,,,,1.0,0.0,,3,0.0,13.0,2.0,4.33,9.0,0,2547455,894,Oman,1,Oman Innings
+0,1.0,2015427,George Munsey,c Jatinder Singh b Fayyaz Butt,-,20.0,19.0,4.0,0.0,105.26,,,,,,,,2547455,894,Oman,2,Scotland Innings
+1,2.0,76350,Kyle Coetzer, b Khawar Ali,-,41.0,28.0,2.0,3.0,146.42,,,,,,,,2547455,894,Oman,2,Scotland Innings
+2,3.0,1251816,Matthew Cross,not out,-,26.0,35.0,0.0,0.0,74.28,,,,,,,,2547455,894,Oman,2,Scotland Innings
+3,4.0,76482,Richie Berrington,not out,-,31.0,21.0,1.0,3.0,147.61,,,,,,,,2547455,894,Oman,2,Scotland Innings
+0,,697317,Calum MacLeod,,,,,,,,,,,,,,,2547455,894,Oman,2,Scotland Innings
+1,,1244910,Michael Leask,,,,,,,,,,,,,,,2547455,894,Oman,2,Scotland Innings
+2,,2619609,Chris Greaves,,,,,,,,,,,,,,,2547455,894,Oman,2,Scotland Innings
+3,,1977255,Mark Watt,,,,,,,,,,,,,,,2547455,894,Oman,2,Scotland Innings
+4,,1221807,Josh Davey,,,,,,,,,,,,,,,2547455,894,Oman,2,Scotland Innings
+5,,1244922,Safyaan Sharif,,,,,,,,,,,,,,,2547455,894,Oman,2,Scotland Innings
+6,,2422617,Brad Wheal,,,,,,,,,,,,,,,2547455,894,Oman,2,Scotland Innings
+0,,2813871,Bilal Khan,,,,,2.0,0.0,,3,0.0,15.0,0.0,5.00,11.0,2,2547455,894,Oman,2,Scotland Innings
+1,,1310259,Fayyaz Butt,,,,,2.0,1.0,,3,0.0,26.0,1.0,8.66,8.0,2,2547455,894,Oman,2,Scotland Innings
+2,,2821791,Aqib Ilyas,,,,,2.0,0.0,,2,0.0,14.0,0.0,7.00,5.0,0,2547455,894,Oman,2,Scotland Innings
+3,,1755261,Zeeshan Maqsood,,,,,0.0,1.0,,3,0.0,19.0,0.0,6.33,6.0,1,2547455,894,Oman,2,Scotland Innings
+4,,1755255,Khawar Ali,,,,,0.0,2.0,,4,0.0,27.0,1.0,6.75,8.0,0,2547455,894,Oman,2,Scotland Innings
+5,,125964,Mohammad Nadeem,,,,,1.0,2.0,,1.6,0.0,22.0,0.0,11.00,3.0,0,2547455,894,Oman,2,Scotland Innings
