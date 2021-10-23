@@ -1845,7 +1845,24 @@ a.text-dark:hover, a.text-dark:focus {
   width:200px;
   height:200px;
 }
-
+@media (min-width: 992px) {
+  .img {
+    width:200px;
+    height:200px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  img {
+    width:200px;
+    height:200px;
+  }
+}
+@media only screen and (min-width: 400px) {
+  img {
+    width:200px;
+    height:200px;
+  }
+}
 .page-footer h3,
 .page-footer h4,
 .page-footer h5 {
