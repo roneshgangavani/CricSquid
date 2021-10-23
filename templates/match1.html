@@ -123,7 +123,7 @@ body {
 }
     </style>
     </head>
-    <div class="tabset">
+    <div class="tabset d-flex justify-content-center">
         <!-- Tab 1 -->
         <input type="radio" name="tabset" onclick="openCity(event, 'team1')" id="defaultOpen" aria-controls="marzen" >
         <label for="defaultOpen">{{team1}}</label>
@@ -156,39 +156,38 @@ body {
     <div id="team1" class="tabcontent">
         <div class="page-section">
             <div class="container">
-              
               <div class="row">
                 {% for key,value in sqaud1.iterrows()  %}
                 <div class="col-lg-4" >
                   <div class="card-service wow fadeInUp">
                       <div class="header">
-                        <img src="/static/assets/img/player_pic/{{value['Player Name']}}.png" alt="">
+                        <img src="/static/assets/img/player_pic/{{value['player_name']}}.png" alt="">
                       </div>
                       <div class="body">
-                        <h5 class="text-secondary">{{value['Player Name']}}</h5>
+                        <h5 class="text-secondary">{{value['player_name']}}</h5>
                         <p>Upcoming..</p>
-                        <span onclick="openNav()">
-                        <button type="button" class="btn btn-primary">Report Card</button>
+                        <span onclick="openNav({{key}})">
+                        <button type="button" class="btn btn-primary">Performance</button>
                         </span>
                       </div>
                   </div>
                 </div> 
                
 
-                <div id="myNav" class="overlay" style="margin-top:4%">
-                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color: tomato;"><p>Close</p></a>
+                <div id="{{key}}" class="overlay" style="margin-top:4%">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav({{key}})" style="color: tomato;"><p>Close</p></a>
                   <div class="overlay-content">
                       <div class="page-section">
                           <div class="container">
-                            {{value['Player Name']}}
                             <div class="row">
                               <div class="col-lg-4" style="width: 80%; height: 80%; margin: 0%;" >
                                 <div class="card-service wow fadeInUp">
                                     <div class="header">
-                                      <img src="/static/assets/img/player_pic/{{value['Player Name']}}.png" alt="">
+                                      <img src="/static/assets/img/player_pic/{{value['player_name']}}.png" alt="">
                                     </div>
                                     <div class="body">
-                                      <h5 class="text-secondary">{{value['Player Name']}}</h5>
+                                      <h5 class="text-secondary"><b>{{value['player_name']}}</b></h5>
+                                      <p><b>Performance Since :{{value['data_since']}} </b></p>
                                     </div>
                                 </div>
                               </div> 
@@ -196,9 +195,19 @@ body {
                                 <div class="card-service wow fadeInUp">
                                     <div class="body">
                                       <h5 class="text-secondary">T20s(Overall)</h5>
-                                      <p><b>Performance Since 2019 </b></p>
-                                      <p><b>Matches:</b><i>34</i> </p>
-                                      <p><b>Runs:</b><i>540</i> </p>
+                  
+                                      <p><b>Matches:</b>{{value['matches']}} </p>
+                                      <p><b> Runs  :</b><i> {{value['Runs']}}</i> </p>
+                                      <p><b> Avg.  :</b><i> {{value['avg']}}</i> </p>
+                                      <p><b>Strike rate:</b><i> {{value['Strike_rate']}}</i> </p>
+                                      <p><b> Last Five Runs :</b><i> {{value['last_five_runs']}}</i> </p>
+                                      <p><b>Last Five Avg</b><i> {{value['last_five_avg']}}</i> </p>
+
+                                      <h5 class="text-secondary">International</h5>
+                                      <p><b>Matches:</b>{{value['Intl_matches']}} </p>
+                                      <p><b> Runs:</b><i> {{value['Intl_Runs']}}</i> </p>
+                                      <p><b> Avg.  :</b><i> {{value['Intl_avg']}}</i> </p>
+                                      <p><b> Strike rate:</b><i> {{value['Intl_SR']}}</i> </p>
                                     </div>
                                 </div>
                               </div>  
@@ -206,9 +215,18 @@ body {
                                 <div class="card-service wow fadeInUp">
                                     <div class="body">
                                       <h5 class="text-secondary">T20s(Overall)</h5>
-                                      <p><b>Performance Since 2019 </b></p>
-                                      <p><b>Matches:</b><i>34</i> </p>
-                                      <p><b>Runs:</b><i>540</i> </p>
+                                      <h5 class="text-secondary">Bowling</h5>
+                                      <p><b>Matches:</b>{{value['matches']}} </p>
+                                      <p><b> Wickets  :</b><i> {{value['wickets']}}</i> </p>
+                                      <p><b> Economy.  :</b><i> {{value['economy']}}</i> </p>
+                                      <p><b> Last Five Wickets :</b><i> {{value['last_five_wickets']}}</i> </p>
+                                      <p><b>Last Five Eco:</b><i> {{value['last_five_eco']}}</i> </p>
+
+                                      <h5 class="text-secondary">International</h5>
+                                      <p><b>Matches:</b>{{value['Intl_matches']}} </p>
+                                      <p><b> Wickets:</b><i> {{value['Intl_wickets']}}</i> </p>
+                                      <p><b> Economy.  :</b><i> {{value['League_eco']}}</i> </p>
+                                      
                                     </div>
                                 </div>
                               </div>  
@@ -252,52 +270,219 @@ body {
         <div class="container">
           <div class="row">
             {% for key,value in squad2.iterrows()  %}
-            <div class="col-lg-4">
-            <div class="card-service wow fadeInUp">
-                <div class="header">
-                <img src="/static/assets/img/player_pic/{{value['Player Name']}}.png" alt="">
-                </div>
-                <div class="body">
-                <h5 class="text-secondary">{{value['Player Name']}}</h5>
-                <p>Upcoming..</p>
-                <span onclick="openNav1()">
-                <button type="button" class="btn btn-primary">Report Card</button>
-                </span>
-                </div>
-            </div>
+            <div class="col-lg-4" >
+              <div class="card-service wow fadeInUp">
+                  <div class="header">
+                    <img src="/static/assets/img/player_pic/{{value['player_name']}}.png" alt="">
+                  </div>
+                  <div class="body">
+                    <h5 class="text-secondary">{{value['player_name']}}</h5>
+                    <p>Upcoming..</p>
+                    <span onclick="openNav({{key}})">
+                    <button type="button" class="btn btn-primary">Performance</button>
+                    </span>
+                  </div>
+              </div>
             </div> 
-            {% endfor %}     
+           
+
+            <div id="{{key}}" class="overlay" style="margin-top:4%">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav({{key}})" style="color: tomato;"><p>Close</p></a>
+              <div class="overlay-content">
+                  <div class="page-section">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-lg-4" style="width: 80%; height: 80%; margin: 0%;" >
+                            <div class="card-service wow fadeInUp">
+                                <div class="header">
+                                  <img src="/static/assets/img/player_pic/{{value['player_name']}}.png" alt="">
+                                </div>
+                                <div class="body">
+                                  <h5 class="text-secondary"><b>{{value['player_name']}}</b></h5>
+                                  <p><b>Performance Since :{{value['data_since']}} </b></p>
+                                </div>
+                            </div>
+                          </div> 
+                          <div class="col-lg-4">
+                            <div class="card-service wow fadeInUp">
+                                <div class="body">
+                                  <h5 class="text-secondary">T20s(Overall)</h5>
+                                  <p><b>Matches:</b>{{value['matches']}} </p>
+                                  <p><b> Runs  :</b><i> {{value['Runs']}}</i> </p>
+                                  <p><b> Avg.  :</b><i> {{value['avg']}}</i> </p>
+                                  <p><b>Strike rate:</b><i> {{value['Strike_rate']}}</i> </p>
+                                  <p><b> Last Five Runs :</b><i> {{value['last_five_runs']}}</i> </p>
+                                  <p><b>Last Five Avg</b><i> {{value['last_five_avg']}}</i> </p>
+
+                                  <h5 class="text-secondary">International</h5>
+                                  <p><b>Matches:</b>{{value['Intl_matches']}} </p>
+                                  <p><b> Runs:</b><i> {{value['Intl_Runs']}}</i> </p>
+                                  <p><b> Avg.  :</b><i> {{value['Intl_avg']}}</i> </p>
+                                  <p><b> Strike rate:</b><i> {{value['Intl_SR']}}</i> </p>
+                                </div>
+                            </div>
+                          </div>  
+                          <div class="col-lg-4">
+                            <div class="card-service wow fadeInUp">
+                                <div class="body">
+                                  <h5 class="text-secondary">T20s(Overall)</h5>
+                                      <h5 class="text-secondary">Bowling</h5>
+                                      <p><b>Matches:</b>{{value['matches']}} </p>
+                                      <p><b> Wickets  :</b><i> {{value['wickets']}}</i> </p>
+                                      <p><b> Economy.  :</b><i> {{value['economy']}}</i> </p>
+                                      <p><b> Last Five Wickets :</b><i> {{value['last_five_wickets']}}</i> </p>
+                                      <p><b>Last Five Eco:</b><i> {{value['last_five_eco']}}</i> </p>
+
+                                      <h5 class="text-secondary">International</h5>
+                                      <p><b>Matches:</b>{{value['Intl_matches']}} </p>
+                                      <p><b> Wickets:</b><i> {{value['Intl_wickets']}}</i> </p>
+                                      <p><b> Economy.  :</b><i> {{value['League_eco']}}</i> </p>
+                                </div>
+                            </div>
+                          </div>  
+                          <div class="col-lg-4">
+                            <div class="card-service wow fadeInUp">
+                                <div class="body">
+                                  <h5 class="text-secondary">T20s(Overall)</h5>
+                                  <p><b>Performance Since 2019 </b></p>
+                                  <p><b>Matches:</b><i>34</i> </p>
+                                  <p><b>Runs:</b><i>540</i> </p>
+                                </div>
+                            </div>
+                          </div>  
+                          <div class="col-lg-4">
+                            <div class="card-service wow fadeInUp">
+                                <div class="body">
+                                  <h5 class="text-secondary">T20s(Overall)</h5>
+                                  <p><b>Performance Since 2019 </b></p>
+                                  <p><b>Matches:</b><i>34</i> </p>
+                                  <p><b>Runs:</b><i>540</i> </p>
+                                </div>
+                            </div>
+                          </div>  
+  
+                        </div>
+                      </div> <!-- .container -->
+                    </div> <!-- .page-section -->
+              </div>
+            </div>
+          
+            {% endfor %}  
+
           </div>
         </div> <!-- .container -->
       </div> <!-- .page-section -->
-      <div id="myNav1" class="overlay" style="margin-top:4%">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()" style="color: tomato;"><p>Close</p></a>
-        <div class="overlay-content">
-            <div class="page-section">
-                <div class="container">
-                  
-                  <div class="row">
-                    <div class="col-lg-4">
-                    <div class="card-service wow fadeInUp">
-                        <div class="body">
-                        <h5 class="text-secondary">T20s(Overall)</h5>
-                        <p><b>Performance Since 2019 </b></p>
-                        <p><b>Matches:</b><i>34</i> </p>
-                        <p><b>Runs:</b><i>540</i> </p>
-                        </div>
-                    </div>
-                    </div>      
-                  </div>
-                </div> <!-- .container -->
-              </div> <!-- .page-section -->
-        </div>
-      </div>
+     
     </div>
     
-    <div id="playing" class="tabcontent">
-    <h3>Tokyo</h3>
-    <p>Tokyo is the capital of Japan.</p>
-</div>
+  <div id="playing" class="tabcontent">
+  <div class="page-section">
+        <div class="container">
+          <div class="row">
+            {% for key,value in top.iterrows()  %}
+            <div class="col-lg-4" >
+              <div class="card-service wow fadeInUp">
+                  <div class="header">
+                    <img src="/static/assets/img/player_pic/{{value['player_name']}}.png" alt="">
+                  </div>
+                  <div class="body">
+                    <h5 class="text-secondary">{{value['player_name']}}</h5>
+                    <p>Upcoming..</p>
+                    <span onclick="openNav({{key}})">
+                    <button type="button" class="btn btn-primary">Performance</button>
+                    </span>
+                  </div>
+              </div>
+            </div> 
+           
+
+            <div id="{{key}}" class="overlay" style="margin-top:4%">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav({{key}})" style="color: tomato;"><p>Close</p></a>
+              <div class="overlay-content">
+                  <div class="page-section">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-lg-4" style="width: 80%; height: 80%; margin: 0%;" >
+                            <div class="card-service wow fadeInUp">
+                                <div class="header">
+                                  <img src="/static/assets/img/player_pic/{{value['player_name']}}.png" alt="">
+                                </div>
+                                <div class="body">
+                                  <h5 class="text-secondary"><b>{{value['player_name']}}</b></h5>
+                                  <p><b>Performance Since :{{value['data_since']}} </b></p>
+                                </div>
+                            </div>
+                          </div> 
+                          <div class="col-lg-4">
+                            <div class="card-service wow fadeInUp">
+                                <div class="body">
+                                  <h5 class="text-secondary">T20s(Overall)</h5>
+                                  <p><b>Matches:</b>{{value['matches']}} </p>
+                                  <p><b> Runs  :</b><i> {{value['Runs']}}</i> </p>
+                                  <p><b> Avg.  :</b><i> {{value['avg']}}</i> </p>
+                                  <p><b>Strike rate:</b><i> {{value['Strike_rate']}}</i> </p>
+                                  <p><b> Last Five Runs :</b><i> {{value['last_five_runs']}}</i> </p>
+                                  <p><b>Last Five Avg</b><i> {{value['last_five_avg']}}</i> </p>
+
+                                  <h5 class="text-secondary">International</h5>
+                                  <p><b>Matches:</b>{{value['Intl_matches']}} </p>
+                                  <p><b> Runs:</b><i> {{value['Intl_Runs']}}</i> </p>
+                                  <p><b> Avg.  :</b><i> {{value['Intl_avg']}}</i> </p>
+                                  <p><b> Strike rate:</b><i> {{value['Intl_SR']}}</i> </p>
+                                </div>
+                            </div>
+                          </div>  
+                          <div class="col-lg-4">
+                            <div class="card-service wow fadeInUp">
+                                <div class="body">
+                                  <h5 class="text-secondary">T20s(Overall)</h5>
+                                      <h5 class="text-secondary">Bowling</h5>
+                                      <p><b>Matches:</b>{{value['matches']}} </p>
+                                      <p><b> Wickets  :</b><i> {{value['wickets']}}</i> </p>
+                                      <p><b> Economy.  :</b><i> {{value['economy']}}</i> </p>
+                                      <p><b> Last Five Wickets :</b><i> {{value['last_five_wickets']}}</i> </p>
+                                      <p><b>Last Five Eco:</b><i> {{value['last_five_eco']}}</i> </p>
+
+                                      <h5 class="text-secondary">International</h5>
+                                      <p><b>Matches:</b>{{value['Intl_matches']}} </p>
+                                      <p><b> Wickets:</b><i> {{value['Intl_wickets']}}</i> </p>
+                                      <p><b> Economy.  :</b><i> {{value['League_eco']}}</i> </p>
+                                </div>
+                            </div>
+                          </div>  
+                          <div class="col-lg-4">
+                            <div class="card-service wow fadeInUp">
+                                <div class="body">
+                                  <h5 class="text-secondary">T20s(Overall)</h5>
+                                  <p><b>Performance Since 2019 </b></p>
+                                  <p><b>Matches:</b><i>34</i> </p>
+                                  <p><b>Runs:</b><i>540</i> </p>
+                                </div>
+                            </div>
+                          </div>  
+                          <div class="col-lg-4">
+                            <div class="card-service wow fadeInUp">
+                                <div class="body">
+                                  <h5 class="text-secondary">T20s(Overall)</h5>
+                                  <p><b>Performance Since 2019 </b></p>
+                                  <p><b>Matches:</b><i>34</i> </p>
+                                  <p><b>Runs:</b><i>540</i> </p>
+                                </div>
+                            </div>
+                          </div>  
+  
+                        </div>
+                      </div> <!-- .container -->
+                    </div> <!-- .page-section -->
+              </div>
+            </div>
+          
+            {% endfor %}  
+
+          </div>
+        </div> <!-- .container -->
+      </div> <!-- .page-section -->
+  </div>
 <script>
 var coll = document.getElementsByClassName("collapsible");
 var i;
@@ -331,16 +516,17 @@ function openCity(evt, cityName) {
 document.getElementById("defaultOpen").click();
 
 function openNav(value) {
-  document.getElementById("myNav").style.width = "100%";
+  document.getElementById(value).style.width = "100%";
+
   return value
 }
 
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
+function closeNav(value) {
+  document.getElementById(value).style.width = "0%";
 }
 
-function openNav1() {
-  document.getElementById("myNav1").style.width = "100%";
+function openNav1(value) {
+  document.getElementById(value).style.width = "100%";
 }
 
 function closeNav1() {

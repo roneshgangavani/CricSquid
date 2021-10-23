@@ -1805,6 +1805,17 @@ a.text-dark:hover, a.text-dark:focus {
   border-bottom-right-radius: 0;
 }
 
+@media only screen and (max-width: 990px) {
+  .media {
+		align-items: center !important;
+	}
+}
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
 
 
 .page-footer {
@@ -1822,6 +1833,11 @@ a.text-dark:hover, a.text-dark:focus {
 
 .page-footer p a:hover {
   color: #3d7df5f1;
+}
+
+img {
+  max-width:100%;
+  height:auto;
 }
 
 .page-footer h3,
