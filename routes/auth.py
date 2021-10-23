@@ -42,7 +42,7 @@ def index():
         worl_cup_schedule1['team2']=t[1]
     print(worl_cup_schedule1)
     worl_cup_upcoming=worl_cup_schedule[worl_cup_schedule['date']>str(date.today())+"T10:00:00+00:00"]
-    worl_cup_upcoming=worl_cup_upcoming.head(8)
+    worl_cup_upcoming=worl_cup_upcoming.head(4)
     worl_cup_upcoming=worl_cup_upcoming.loc[:,['match_title','date']]
     worl_cup_upcoming['match_title']=worl_cup_upcoming['match_title'].str.split("at")
 
@@ -55,16 +55,29 @@ def match1():
     team2=str(team[1])
     team1=team1.replace(' ','')
     team2=team2.replace(' ','')
-    team1=pd.read_csv('data/'+team1+'.csv')
-    team2=pd.read_csv('data/'+team2+'.csv')
+    team1=pd.read_csv('data/t20_team/'+team1+'.csv')
+    team2=pd.read_csv('data/t20_team/'+team2+'.csv')
+    
     return render_template("match1.html", title=t1,team1=team[0],team2=team[1],playing="TOP 11",sqaud1=team1,squad2=team2)
 def todays():
     t1 = request.args.get('t1')
-    print(t1)  
+    title=t1
+     
     team=t1.split(' ')
+    team1=str(team[0])
+    team2=str(team[1])
+    team11=team1.replace(' ','')
+    team22=team2.replace(' ','')
+    print(team1)
+    print(team2)
+    team1=pd.read_csv('data/t20_team/'+team1+'.csv')
+    team2=pd.read_csv('data/t20_team/'+team2+'.csv')
+    print("-------t1-----------")
+    print(t1)  
     print(team)
-
-    return render_template("match1.html", title=t1,team1=team[0],team2=team[2],playing="TOP 11")
+    print(team[0])
+    print(team[1])
+    return render_template("match1.html", title=title,team1=team11,team2=team22,playing="TOP 11",sqaud1=team1,squad2=team2)
 
 # def covid_ask_help():
 #     return render_template("ask_help.html", title="Ask Help")

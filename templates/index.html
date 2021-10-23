@@ -10,7 +10,7 @@
             
             <h1 class="mb-4">{{value['team1']}} Vs{{value['team2']}}</h1>
             
-            <a href="/todays?t1={{value['team1']}}{{value['team2']}}" class="btn btn-primary btn-split">Playing 11 <div class="fab"><span class="mai-play"></span></div></a>
+            <a href="/todays?t1={{value['team1']}}{{value['team2'].replace(' ','')}}" class="btn btn-primary btn-split">Playing 11 <div class="fab"><span class="mai-play"></span></div></a>
           </div>
           <div class="col-md-6 py-5 wow zoomIn">
             <div class="img-fluid text-center">
@@ -29,9 +29,9 @@
         {% for key,value in worl_cup_upcoming.iterrows()  %}
         <div class="col-sl-4" style="padding: 1.5%;">
           <div class="card-service wow fadeInUp">
-            <div class="header">
+            <!-- <div class="header">
               <img src="{{ url_for('static', filename='assets/img/services/service-1.svg') }}" alt="">
-            </div>
+            </div> -->
             <div class="body">
               <p>Upcoming...</p>
               <h5 class="text-secondary">{{value['match_title'][0]}}</h5>

@@ -110,7 +110,7 @@ body {
   position: absolute;
   top: 20px;
   right: 45px;
-  font-size: 60px;
+  font-size: 15px;
 }
 
 @media screen and (max-height: 450px) {
@@ -160,46 +160,91 @@ body {
               <div class="row">
                 {% for key,value in sqaud1.iterrows()  %}
                 <div class="col-lg-4" >
-                <div class="card-service wow fadeInUp">
-                    <div class="header">
-                    <img src="/static/assets/img/player_pic/{{value['Player Name']}}.png" alt="">
-                    </div>
-                    <div class="body">
-                    <h5 class="text-secondary">{{value['Player Name']}}</h5>
-                    <p>Upcoming..</p>
-                    <span onclick="openNav()">
-                    <button type="button" class="btn btn-primary">Report Card</button>
-                    </span>
-                    </div>
-                </div>
+                  <div class="card-service wow fadeInUp">
+                      <div class="header">
+                        <img src="/static/assets/img/player_pic/{{value['Player Name']}}.png" alt="">
+                      </div>
+                      <div class="body">
+                        <h5 class="text-secondary">{{value['Player Name']}}</h5>
+                        <p>Upcoming..</p>
+                        <span onclick="openNav()">
+                        <button type="button" class="btn btn-primary">Report Card</button>
+                        </span>
+                      </div>
+                  </div>
                 </div> 
-                {% endfor %}     
+               
+
+                <div id="myNav" class="overlay" style="margin-top:4%">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color: tomato;"><p>Close</p></a>
+                  <div class="overlay-content">
+                      <div class="page-section">
+                          <div class="container">
+                            {{value['Player Name']}}
+                            <div class="row">
+                              <div class="col-lg-4" style="width: 80%; height: 80%; margin: 0%;" >
+                                <div class="card-service wow fadeInUp">
+                                    <div class="header">
+                                      <img src="/static/assets/img/player_pic/{{value['Player Name']}}.png" alt="">
+                                    </div>
+                                    <div class="body">
+                                      <h5 class="text-secondary">{{value['Player Name']}}</h5>
+                                    </div>
+                                </div>
+                              </div> 
+                              <div class="col-lg-4">
+                                <div class="card-service wow fadeInUp">
+                                    <div class="body">
+                                      <h5 class="text-secondary">T20s(Overall)</h5>
+                                      <p><b>Performance Since 2019 </b></p>
+                                      <p><b>Matches:</b><i>34</i> </p>
+                                      <p><b>Runs:</b><i>540</i> </p>
+                                    </div>
+                                </div>
+                              </div>  
+                              <div class="col-lg-4">
+                                <div class="card-service wow fadeInUp">
+                                    <div class="body">
+                                      <h5 class="text-secondary">T20s(Overall)</h5>
+                                      <p><b>Performance Since 2019 </b></p>
+                                      <p><b>Matches:</b><i>34</i> </p>
+                                      <p><b>Runs:</b><i>540</i> </p>
+                                    </div>
+                                </div>
+                              </div>  
+                              <div class="col-lg-4">
+                                <div class="card-service wow fadeInUp">
+                                    <div class="body">
+                                      <h5 class="text-secondary">T20s(Overall)</h5>
+                                      <p><b>Performance Since 2019 </b></p>
+                                      <p><b>Matches:</b><i>34</i> </p>
+                                      <p><b>Runs:</b><i>540</i> </p>
+                                    </div>
+                                </div>
+                              </div>  
+                              <div class="col-lg-4">
+                                <div class="card-service wow fadeInUp">
+                                    <div class="body">
+                                      <h5 class="text-secondary">T20s(Overall)</h5>
+                                      <p><b>Performance Since 2019 </b></p>
+                                      <p><b>Matches:</b><i>34</i> </p>
+                                      <p><b>Runs:</b><i>540</i> </p>
+                                    </div>
+                                </div>
+                              </div>  
+      
+                            </div>
+                          </div> <!-- .container -->
+                        </div> <!-- .page-section -->
+                  </div>
+                </div>
+              
+                {% endfor %}  
+
               </div>
             </div> <!-- .container -->
           </div> <!-- .page-section -->
-          <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="overlay-content">
-                <div class="page-section">
-                    <div class="container">
-                      
-                      <div class="row">
-                        <div class="col-lg-4">
-                        <div class="card-service wow fadeInUp">
-                            <div class="body">
-                            <h5 class="text-secondary">T20s(Overall)</h5>
-                            <p><b>Performance Since 2019 </b></p>
-                            <p><b>Matches:</b><i>34</i> </p>
-                            <p><b>Runs:</b><i>540</i> </p>
-                            </div>
-                        </div>
-                        </div>      
-                      </div>
-                    </div> <!-- .container -->
-                  </div> <!-- .page-section -->
-            </div>
-          </div>
-        
+         
     </div>
     
     <div id="team2" class="tabcontent">
@@ -215,7 +260,7 @@ body {
                 <div class="body">
                 <h5 class="text-secondary">{{value['Player Name']}}</h5>
                 <p>Upcoming..</p>
-                <span onclick="openNav()">
+                <span onclick="openNav1()">
                 <button type="button" class="btn btn-primary">Report Card</button>
                 </span>
                 </div>
@@ -225,8 +270,8 @@ body {
           </div>
         </div> <!-- .container -->
       </div> <!-- .page-section -->
-      <div id="myNav1" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+      <div id="myNav1" class="overlay" style="margin-top:4%">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()" style="color: tomato;"><p>Close</p></a>
         <div class="overlay-content">
             <div class="page-section">
                 <div class="container">
@@ -285,8 +330,9 @@ function openCity(evt, cityName) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 
-function openNav() {
+function openNav(value) {
   document.getElementById("myNav").style.width = "100%";
+  return value
 }
 
 function closeNav() {
