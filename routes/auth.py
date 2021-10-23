@@ -27,9 +27,11 @@ def index():
     worl_cup_schedule=pd.read_csv("data/2021_cup_schedule.csv")
     worl_cup_schedule=worl_cup_schedule.loc[:,['id','match_title','match_subtitle','venue','date']]
     worl_cup_schedule['date']=pd.to_datetime(worl_cup_schedule['date'])
-    worl_cup_schedule1=worl_cup_schedule[worl_cup_schedule['date']==str(date.today())+"T10:00:00+00:00"]
-    list1=worl_cup_schedule1['match_title']
-    for i in list1:
+    worl_cup_schedule['date'] =pd.to_datetime( worl_cup_schedule['date']).dt.date
+    worl_cup_schedule1=worl_cup_schedule[worl_cup_schedule['date']==date.today()]
+    print(worl_cup_schedule1)
+    todays_match=pd.DataFrame()
+    for i in worl_cup_schedule1['match_title']:
         print("-------i-----------")
         teams=i.split('at')
         print(teams)
@@ -37,14 +39,16 @@ def index():
         print(t)
         worl_cup_schedule1['team1']=t[0]
         worl_cup_schedule1['team2']=t[1]
-    worl_cup_upcoming=worl_cup_schedule[worl_cup_schedule['date']>str(date.today())+"T10:00:00+00:00"]
+        todays_match=todays_match.append(worl_cup_schedule1)
+    todays_match=todays_match.drop_duplicates(subset=['team1','team2'])
+    worl_cup_upcoming=worl_cup_schedule[worl_cup_schedule['date']>date.today()]
     worl_cup_upcoming['date'] =pd.to_datetime( worl_cup_upcoming['date']).dt.date
-    worl_cup_upcoming=worl_cup_upcoming.head(4)
+    worl_cup_upcoming=worl_cup_upcoming.head(8)
     worl_cup_upcoming=worl_cup_upcoming.loc[:,['match_title','date']]
     worl_cup_upcoming['match_title']=worl_cup_upcoming['match_title'].str.split("at")
 
 
-    return render_template("index.html", title="Fantastic Playing Players",match_todays=worl_cup_schedule1,worl_cup_upcoming=worl_cup_upcoming)
+    return render_template("index.html", title="Fantastic Playing Players",match_todays=todays_match,worl_cup_upcoming=worl_cup_upcoming)
 def match1():
     t1 = request.args.get('t1')  
     team=t1.split('v')
@@ -88,8 +92,10 @@ def match1():
         player_last5=player.tail(5) 
         player_info['last_five_runs']=player_last5['runs'].sum()
         player_info['last_five_avg']=(player_last5['runs'].sum())/5
+        player['economy']=player['economy'].str.replace("-","0")
         player['economy']=player['economy'].astype('float')
         player_last5['economy']=player_last5['economy'].astype('float')
+        intl_record['economy']=intl_record['economy'].str.replace("-","0")
         intl_record['economy']=intl_record['economy'].astype('float')
         player_info['wickets']=player['wickets'].sum()
         player_info['economy']=player['economy'].mean()
@@ -172,8 +178,11 @@ def match1():
     player_record2=player_record2.round(0)
 
     player_record=player_record1.append(player_record2)
-    player_record=player_record.nlargest(11,['Strike_rate','Intl_SR','Intl_Runs','last_five_avg','wickets','economy','Intl_wickets'])
+    player_record=player_record.nlargest(11,['Strike_rate','Intl_SR','Intl_Runs','last_five_avg','wickets','economy','Intl_wickets','last_five_wickets','last_five_runs'])
+    player_record=player_record.reset_index()
+    del player_record['index']
     print(player_record)
+
     return render_template("match1.html", title=t1,team1=team[0],team2=team[1],playing="TOP 11",sqaud1=player_record1,squad2=player_record2,top=player_record)
 def todays():
     t1 = request.args.get('t1')
@@ -309,8 +318,10 @@ def todays():
     player_record2=player_record2.round(0)
     print(player_record2)
     player_record=player_record1.append(player_record2)
-    player_record=player_record.nlargest(11,['Strike_rate','Intl_SR','Intl_Runs','last_five_avg','wickets','economy','Intl_wickets'])
-    print(player_record)
+    player_record=player_record.nlargest(11,['Strike_rate','Intl_SR','Intl_Runs','last_five_avg','wickets','economy','Intl_wickets','last_five_wickets','last_five_runs'])
+    player_record=player_record.reset_index()
+    del player_record['index']
+    # print(player_record)
     return render_template("match1.html", title=title,team1=team11,team2=team22,playing="TOP 11",sqaud1=player_record1,squad2=player_record2,top=player_record)
 
 # def covid_ask_help():

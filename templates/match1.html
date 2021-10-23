@@ -161,11 +161,11 @@ body {
                 <div class="col-lg-4" >
                   <div class="card-service wow fadeInUp">
                       <div class="header">
-                        <img src="/static/assets/img/player_pic/{{value['player_name']}}.png" alt="">
+                        <img class="img" src="/static/assets/img/player_pic/{{value['player_name']}}.png" alt="">
                       </div>
                       <div class="body">
                         <h5 class="text-secondary">{{value['player_name']}}</h5>
-                        <p>Upcoming..</p>
+                        <p><b>Performance Since :{{value['data_since']}} </b></p>
                         <span onclick="openNav({{key}})">
                         <button type="button" class="btn btn-primary">Performance</button>
                         </span>
@@ -183,7 +183,7 @@ body {
                               <div class="col-lg-4" style="width: 80%; height: 80%; margin: 0%;" >
                                 <div class="card-service wow fadeInUp">
                                     <div class="header">
-                                      <img src="/static/assets/img/player_pic/{{value['player_name']}}.png" alt="">
+                                      <img class="img" src="/static/assets/img/player_pic/{{value['player_name']}}.png" alt="">
                                     </div>
                                     <div class="body">
                                       <h5 class="text-secondary"><b>{{value['player_name']}}</b></h5>
@@ -202,8 +202,8 @@ body {
                                       <p><b>Strike rate:</b><i> {{value['Strike_rate']}}</i> </p>
                                       <p><b> Last Five Runs :</b><i> {{value['last_five_runs']}}</i> </p>
                                       <p><b>Last Five Avg</b><i> {{value['last_five_avg']}}</i> </p>
-
                                       <h5 class="text-secondary">International</h5>
+                                     
                                       <p><b>Matches:</b>{{value['Intl_matches']}} </p>
                                       <p><b> Runs:</b><i> {{value['Intl_Runs']}}</i> </p>
                                       <p><b> Avg.  :</b><i> {{value['Intl_avg']}}</i> </p>
@@ -221,32 +221,12 @@ body {
                                       <p><b> Economy.  :</b><i> {{value['economy']}}</i> </p>
                                       <p><b> Last Five Wickets :</b><i> {{value['last_five_wickets']}}</i> </p>
                                       <p><b>Last Five Eco:</b><i> {{value['last_five_eco']}}</i> </p>
-
+                                      <p>&nbsp;</p>
                                       <h5 class="text-secondary">International</h5>
                                       <p><b>Matches:</b>{{value['Intl_matches']}} </p>
                                       <p><b> Wickets:</b><i> {{value['Intl_wickets']}}</i> </p>
                                       <p><b> Economy.  :</b><i> {{value['League_eco']}}</i> </p>
                                       
-                                    </div>
-                                </div>
-                              </div>  
-                              <div class="col-lg-4">
-                                <div class="card-service wow fadeInUp">
-                                    <div class="body">
-                                      <h5 class="text-secondary">T20s(Overall)</h5>
-                                      <p><b>Performance Since 2019 </b></p>
-                                      <p><b>Matches:</b><i>34</i> </p>
-                                      <p><b>Runs:</b><i>540</i> </p>
-                                    </div>
-                                </div>
-                              </div>  
-                              <div class="col-lg-4">
-                                <div class="card-service wow fadeInUp">
-                                    <div class="body">
-                                      <h5 class="text-secondary">T20s(Overall)</h5>
-                                      <p><b>Performance Since 2019 </b></p>
-                                      <p><b>Matches:</b><i>34</i> </p>
-                                      <p><b>Runs:</b><i>540</i> </p>
                                     </div>
                                 </div>
                               </div>  
@@ -270,14 +250,15 @@ body {
         <div class="container">
           <div class="row">
             {% for key,value in squad2.iterrows()  %}
+
             <div class="col-lg-4" >
               <div class="card-service wow fadeInUp">
                   <div class="header">
-                    <img src="/static/assets/img/player_pic/{{value['player_name']}}.png" alt="">
+                    <img class="img" src="/static/assets/img/player_pic/{{value['player_name']}}.png" alt="">
                   </div>
                   <div class="body">
                     <h5 class="text-secondary">{{value['player_name']}}</h5>
-                    <p>Upcoming..</p>
+                    <p><b>Performance Since :{{value['data_since']}} </b></p>
                     <span onclick="openNav({{key}})">
                     <button type="button" class="btn btn-primary">Performance</button>
                     </span>
@@ -295,7 +276,7 @@ body {
                           <div class="col-lg-4" style="width: 80%; height: 80%; margin: 0%;" >
                             <div class="card-service wow fadeInUp">
                                 <div class="header">
-                                  <img src="/static/assets/img/player_pic/{{value['player_name']}}.png" alt="">
+                                  <img class="img" src="/static/assets/img/player_pic/{{value['player_name']}}.png" alt="">
                                 </div>
                                 <div class="body">
                                   <h5 class="text-secondary"><b>{{value['player_name']}}</b></h5>
@@ -332,7 +313,7 @@ body {
                                       <p><b> Economy.  :</b><i> {{value['economy']}}</i> </p>
                                       <p><b> Last Five Wickets :</b><i> {{value['last_five_wickets']}}</i> </p>
                                       <p><b>Last Five Eco:</b><i> {{value['last_five_eco']}}</i> </p>
-
+                                      <p>&nbsp;</p>
                                       <h5 class="text-secondary">International</h5>
                                       <p><b>Matches:</b>{{value['Intl_matches']}} </p>
                                       <p><b> Wickets:</b><i> {{value['Intl_wickets']}}</i> </p>
@@ -340,26 +321,7 @@ body {
                                 </div>
                             </div>
                           </div>  
-                          <div class="col-lg-4">
-                            <div class="card-service wow fadeInUp">
-                                <div class="body">
-                                  <h5 class="text-secondary">T20s(Overall)</h5>
-                                  <p><b>Performance Since 2019 </b></p>
-                                  <p><b>Matches:</b><i>34</i> </p>
-                                  <p><b>Runs:</b><i>540</i> </p>
-                                </div>
-                            </div>
-                          </div>  
-                          <div class="col-lg-4">
-                            <div class="card-service wow fadeInUp">
-                                <div class="body">
-                                  <h5 class="text-secondary">T20s(Overall)</h5>
-                                  <p><b>Performance Since 2019 </b></p>
-                                  <p><b>Matches:</b><i>34</i> </p>
-                                  <p><b>Runs:</b><i>540</i> </p>
-                                </div>
-                            </div>
-                          </div>  
+                         
   
                         </div>
                       </div> <!-- .container -->
@@ -383,11 +345,11 @@ body {
             <div class="col-lg-4" >
               <div class="card-service wow fadeInUp">
                   <div class="header">
-                    <img src="/static/assets/img/player_pic/{{value['player_name']}}.png" alt="">
+                    <img class="img" src="/static/assets/img/player_pic/{{value['player_name']}}.png" alt="">
                   </div>
                   <div class="body">
                     <h5 class="text-secondary">{{value['player_name']}}</h5>
-                    <p>Upcoming..</p>
+                    <p><b>Performance Since :{{value['data_since']}} </b></p>
                     <span onclick="openNav({{key}})">
                     <button type="button" class="btn btn-primary">Performance</button>
                     </span>
@@ -405,7 +367,7 @@ body {
                           <div class="col-lg-4" style="width: 80%; height: 80%; margin: 0%;" >
                             <div class="card-service wow fadeInUp">
                                 <div class="header">
-                                  <img src="/static/assets/img/player_pic/{{value['player_name']}}.png" alt="">
+                                  <img class="img" src="/static/assets/img/player_pic/{{value['player_name']}}.png" alt="">
                                 </div>
                                 <div class="body">
                                   <h5 class="text-secondary"><b>{{value['player_name']}}</b></h5>
@@ -442,7 +404,7 @@ body {
                                       <p><b> Economy.  :</b><i> {{value['economy']}}</i> </p>
                                       <p><b> Last Five Wickets :</b><i> {{value['last_five_wickets']}}</i> </p>
                                       <p><b>Last Five Eco:</b><i> {{value['last_five_eco']}}</i> </p>
-
+                                      <p>&nbsp;</p>
                                       <h5 class="text-secondary">International</h5>
                                       <p><b>Matches:</b>{{value['Intl_matches']}} </p>
                                       <p><b> Wickets:</b><i> {{value['Intl_wickets']}}</i> </p>

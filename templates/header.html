@@ -42,6 +42,17 @@
 
   <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/theme.css') }}">
 
+<script>
+
+window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-E6L2G8P13C");
+ 
+</script>
 </head>
 
 <body>
@@ -53,13 +64,13 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky" data-offset="500">
       <div class="container">
         <a href="/" class="navbar-brand">
-          <h2><b>Cric<span class="text-primary">Squid</span></b></h2>
+          <img style="max-width:auto; height: 100px;" src="{{ url_for('static', filename='assets/img/cricsquid.png') }}" alt="Cricket Squid">
         </a>
 
 
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent"
           aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon" onclick= "openNav1()"></span>
         </button>
 
         <div class="navbar-collapse collapse" id="navbarContent">
@@ -75,3 +86,12 @@
 
       </div>
     </nav>
+<script>
+    function openNav1() {
+      document.getElementById("navbarContent").style.width = "100%";
+    }
+    
+    function closeNav1() {
+      document.getElementById("navbarContent").style.width = "0%";
+    }
+</script>

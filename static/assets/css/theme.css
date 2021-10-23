@@ -1835,9 +1835,15 @@ a.text-dark:hover, a.text-dark:focus {
   color: #3d7df5f1;
 }
 
-img {
-  max-width:100%;
-  height:auto;
+.imagebanner {
+
+   max-width: 100% !important;
+  height: auto !important;
+}
+
+.img {
+  width:200px;
+  height:200px;
 }
 
 .page-footer h3,
