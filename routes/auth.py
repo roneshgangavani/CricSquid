@@ -8,7 +8,9 @@ from datetime import datetime, timedelta, date
 from flask import request
 from user_agents import parse
 import re
-
+import nltk
+nltk.download('punkt')
+nltk.download('stopwords')
 from nltk import sent_tokenize
 from nltk.corpus import stopwords
 from nltk import word_tokenize
