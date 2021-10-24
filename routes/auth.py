@@ -165,7 +165,7 @@ def match1():
         # player_info['venues_runs']=player_venue['runs'].sum().round(0)
         # player_info['venues_matchs']=player_venue['runs'].count()
             
-        player_record2=player_record2.append(player_info,ignore_index=True)
+        player_record2=player_record2.append(player_info)
     player_record2=player_record2.drop_duplicates('player_name')
     player_record2
     
@@ -175,13 +175,16 @@ def match1():
     player_record2['wickets']=player_record2['wickets'].astype('int')
     player_record2['last_five_wickets']=player_record2['last_five_wickets'].astype('int')
     player_record2['Intl_Runs']=player_record2['Intl_Runs'].astype('int')
-    player_record2=player_record2.round(0)
-
+    player_record2=player_record2.copy()
+    
     player_record=player_record1.append(player_record2)
-    player_record=player_record.nlargest(11,['Strike_rate','Intl_SR','Intl_Runs','last_five_avg','wickets','economy','Intl_wickets','last_five_wickets','last_five_runs'])
+    player_record=player_record.nlargest(11,['Strike_rate','Intl_SR','Intl_Runs','last_five_avg','wickets','economy','Intl_wickets','last_five_wickets','last_five_runs','last_five_runs'])
     player_record=player_record.reset_index()
     del player_record['index']
+    player_record.index = np.arange(2, len(player_record)+2)
     print(player_record)
+    
+    print(player_record2)
 
     return render_template("match1.html", title=t1,team1=team[0],team2=team[1],playing="TOP 11",sqaud1=player_record1,squad2=player_record2,top=player_record)
 def todays():
@@ -305,7 +308,7 @@ def todays():
         # player_info['venues_runs']=player_venue['runs'].sum().round(0)
         # player_info['venues_matchs']=player_venue['runs'].count()
             
-        player_record2=player_record2.append(player_info,ignore_index=True)
+        player_record2=player_record2.append(player_info)
     player_record2=player_record2.drop_duplicates('player_name')
     player_record2
     
@@ -322,6 +325,7 @@ def todays():
     player_record=player_record.reset_index()
     del player_record['index']
     # print(player_record)
+    player_record.index = np.arange(2, len(player_record)+2)
     return render_template("match1.html", title=title,team1=team11,team2=team22,playing="TOP 11",sqaud1=player_record1,squad2=player_record2,top=player_record)
 
 # def covid_ask_help():
