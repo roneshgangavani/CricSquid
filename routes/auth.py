@@ -77,10 +77,9 @@ def match1():
         ipl_record=player[player['tournament']=="IPL"]
         player_info['Intl_Runs']=intl_record['runs'].sum().round(0)
         player_info['League_Runs']=ipl_record['runs'].sum().round(0)
-        player_info['matches']=player['runs'].count()
-       
-        player_info['Intl_matches']=intl_record['runs'].count()
-        player_info['League_matches']=ipl_record['runs'].count()
+        player_info['matches']=len(player['player_name'])
+        player_info['Intl_matches']=len(intl_record['player_name'])
+        player_info['League_matches']=len(ipl_record['player_name'])
         player_info['Intl_avg']=player_info['Intl_Runs'].mean()
         player_info['avg']=player['runs'].mean()
         player['strike_rate']=player['strike_rate'].str.replace("-","0")
@@ -138,9 +137,9 @@ def match1():
         ipl_record=player[player['tournament']=="IPL"]
         player_info['Intl_Runs']=intl_record['runs'].sum().round(0)
         player_info['League_Runs']=ipl_record['runs'].sum().round(0)
-        player_info['matches']=player['runs'].count()
-        player_info['Intl_matches']=intl_record['runs'].count()
-        player_info['League_matches']=ipl_record['runs'].count()
+        player_info['matches']=len(player['player_name'])
+        player_info['Intl_matches']=len(intl_record['player_name'])
+        player_info['League_matches']=len(ipl_record['player_name'])
         player_info['Intl_avg']=player_info['Intl_Runs'].mean()
         player_info['avg']=player['runs'].mean()
         player['strike_rate']=player['strike_rate'].str.replace("-","0")
@@ -178,15 +177,19 @@ def match1():
     player_record2=player_record2.copy()
     
     player_record=player_record1.append(player_record2)
-    player_record=player_record.nlargest(11,['Strike_rate','Intl_SR','Intl_Runs','last_five_avg','wickets','economy','Intl_wickets','last_five_wickets','last_five_runs','last_five_runs'])
+    player_record=player_record.nlargest(15,['Runs','Strike_rate','Intl_SR','Intl_Runs','last_five_avg','wickets','economy','Intl_wickets','last_five_wickets','last_five_runs','last_five_runs'])
     player_record=player_record.reset_index()
     del player_record['index']
     player_record.index = np.arange(2, len(player_record)+2)
+    player_record_top1=player_record.nlargest(7,['Runs','Strike_rate','Intl_SR','Intl_Runs','last_five_avg','last_five_runs'])
+    player_record_top2=player_record.nlargest(7,['wickets','economy','Intl_wickets','last_five_wickets','last_five_eco'])
+    player_record_top3=player_record.nlargest(6,['Runs','Strike_rate','Intl_SR','Intl_Runs','last_five_avg','wickets','economy','Intl_wickets','last_five_wickets','last_five_runs'])
+    player_record_top2=player_record_top2.append(player_record_top3)
+    player_record=player_record_top1.append(player_record_top2)
+    player_record=player_record.drop_duplicates('player_name')
     print(player_record)
-    
-    print(player_record2)
 
-    return render_template("match1.html", title=t1,team1=team[0],team2=team[1],playing="TOP 11",sqaud1=player_record1,squad2=player_record2,top=player_record)
+    return render_template("match1.html", title=t1,team1=team[0],team2=team[1],playing="TOP PICK",sqaud1=player_record1,squad2=player_record2,top=player_record)
 def todays():
     t1 = request.args.get('t1')
     title=t1
@@ -222,10 +225,9 @@ def todays():
         ipl_record=player[player['tournament']=="IPL"]
         player_info['Intl_Runs']=intl_record['runs'].sum().round(0)
         player_info['League_Runs']=ipl_record['runs'].sum().round(0)
-        player_info['matches']=player['runs'].count()
-       
-        player_info['Intl_matches']=intl_record['runs'].count()
-        player_info['League_matches']=ipl_record['runs'].count()
+        player_info['matches']=len(player['player_name'])
+        player_info['Intl_matches']=len(intl_record['player_name'])
+        player_info['League_matches']=len(ipl_record['player_name'])
         player_info['Intl_avg']=player_info['Intl_Runs'].mean()
         player_info['avg']=player['runs'].mean()
         player['strike_rate']=player['strike_rate'].str.replace("-","0")
@@ -282,8 +284,9 @@ def todays():
         player_info['Intl_Runs']=intl_record['runs'].sum().round(0)
         player_info['League_Runs']=ipl_record['runs'].sum().round(0)
         player_info['matches']=player['runs'].count()
-        player_info['Intl_matches']=intl_record['runs'].count()
-        player_info['League_matches']=ipl_record['runs'].count()
+        player_info['matches']=len(player['player_name'])
+        player_info['Intl_matches']=len(intl_record['player_name'])
+        player_info['League_matches']=len(ipl_record['player_name'])
         player_info['Intl_avg']=player_info['Intl_Runs'].mean()
         player_info['avg']=player['runs'].mean()
         player['strike_rate']=player['strike_rate'].str.replace("-","0")
@@ -321,12 +324,20 @@ def todays():
     player_record2=player_record2.round(0)
     print(player_record2)
     player_record=player_record1.append(player_record2)
-    player_record=player_record.nlargest(11,['Strike_rate','Intl_SR','Intl_Runs','last_five_avg','wickets','economy','Intl_wickets','last_five_wickets','last_five_runs'])
+    
+
     player_record=player_record.reset_index()
     del player_record['index']
     # print(player_record)
     player_record.index = np.arange(2, len(player_record)+2)
-    return render_template("match1.html", title=title,team1=team11,team2=team22,playing="TOP 11",sqaud1=player_record1,squad2=player_record2,top=player_record)
+    player_record_top1=player_record.nlargest(7,['Runs','Strike_rate','Intl_SR','Intl_Runs','last_five_avg','last_five_runs'])
+    player_record_top2=player_record.nlargest(7,['wickets','economy','Intl_wickets','last_five_wickets','last_five_eco'])
+    player_record_top3=player_record.nlargest(6,['Runs','Strike_rate','Intl_SR','Intl_Runs','last_five_avg','wickets','economy','Intl_wickets','last_five_wickets','last_five_runs'])
+    player_record_top2=player_record_top2.append(player_record_top3)
+    player_record=player_record_top1.append(player_record_top2)
+    player_record=player_record.drop_duplicates('player_name')
+    print(player_record)
+    return render_template("match1.html", title=title,team1=team11,team2=team22,playing="TOP PICK",sqaud1=player_record1,squad2=player_record2,top=player_record)
 
 # def covid_ask_help():
 #     return render_template("ask_help.html", title="Ask Help")
