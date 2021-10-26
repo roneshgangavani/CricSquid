@@ -37,8 +37,8 @@ def index():
         print(teams)
         t=teams[0].split('v')
         print(t)
-        worl_cup_schedule1['team1']=t[0].replace(' ','')
-        worl_cup_schedule1['team2']=t[1].replace(' ','')
+        worl_cup_schedule1['team1']=t[0]
+        worl_cup_schedule1['team2']=t[1]
         todays_match=todays_match.append(worl_cup_schedule1)
     todays_match=todays_match.drop_duplicates(subset=['team1','team2'])
     print("----todays_match--------")
@@ -61,10 +61,12 @@ def match1():
     print(t1)  
     print(venue)
     team=v[0].split('v')
-    team1=str(team[0])
-    team2=str(team[1])
-    team1=team1.replace(' ','')
-    team2=team2.replace(' ','')
+    team11=str(team[0])
+    team22=str(team[1])
+    print(team11)
+    print(team22)
+    team1=team11.strip()
+    team2=team22.strip()
     
     team1=pd.read_csv('data/t20_team/'+team1+'.csv')
     team2=pd.read_csv('data/t20_team/'+team2+'.csv')
@@ -134,8 +136,14 @@ def match1():
         player_info['v_maiden']=venue_record['maidens'].mean()
 
         #Player VS Team
+        print("=======Player VS Team===")
+        print(team[0])
+        print(team[1])
 
-        playervsteam=player[player['away']==team[1]]
+        playervsteam=player[player['away']==str(team[1].strip())]
+        playervsteam1=player[player['home_y']==str(team[1].strip())]
+        playervsteam=playervsteam.append(playervsteam1)
+        print(playervsteam)
         player_info['p_Runs']=playervsteam['runs'].sum().round(0)
         player_info['p_matches']=len(playervsteam['player_name'])
         player_info['p_avg']=player_info['p_Runs']/player_info['p_matches']
@@ -234,7 +242,9 @@ def match1():
 
          #Player VS Team
 
-        playervsteam=player[player['away']==team[0]]
+        playervsteam=player[player['away']==str(team[0].strip())]
+        playervsteam1=player[player['home_y']==str(team[0].strip())]
+        playervsteam=playervsteam.append(playervsteam1)
         player_info['p_Runs']=playervsteam['runs'].sum().round(0)
         player_info['p_matches']=len(playervsteam['player_name'])
         player_info['p_avg']=player_info['p_Runs']/player_info['p_matches']
@@ -282,12 +292,12 @@ def todays():
     team=v[0].split('vs')
     team1=str(team[0])
     team2=str(team[1])
-    team11=team1.replace(' ','')
-    team22=team2.replace(' ','')
-    print(team1)
-    print(team2)
-    team1=pd.read_csv('data/t20_team/'+team1+'.csv')
-    team2=pd.read_csv('data/t20_team/'+team2+'.csv')
+    team11=team1.replace(' ',' ')
+    team22=team2.replace(' ',' ')
+    print(team11)
+    print(team22)
+    team1=pd.read_csv('data/t20_team/'+team11+'.csv')
+    team2=pd.read_csv('data/t20_team/'+team22+'.csv')
     print("-------t1-----------")
     print(t1)  
     print(team1)
@@ -365,7 +375,9 @@ def todays():
 
          #Player VS Team
 
-        playervsteam=player[player['away']==team[1]]
+        playervsteam=player[player['away']==str(team[1])]
+        playervsteam1=player[player['home_y']==str(team[1])]
+        playervsteam=playervsteam.append(playervsteam1)
         player_info['p_Runs']=playervsteam['runs'].sum().round(0)
         player_info['p_matches']=len(playervsteam['player_name'])
         player_info['p_avg']=player_info['p_Runs']/player_info['p_matches']
@@ -451,7 +463,10 @@ def todays():
         
         
         #VENUES
+        print("================venue_record========="+str(venue))
+        print(playervsteam)
         venue_record=player[player['venue']==venue]
+        print(venue_record)
         player_info['v_Runs']=venue_record['runs'].sum().round(0)
         player_info['v_matches']=len(venue_record['player_name'])
         player_info['v_avg']=player_info['v_Runs']/ player_info['v_matches']
@@ -465,8 +480,15 @@ def todays():
         # player_info['venues_matchs']=player_venue['runs'].count()
 
          #Player VS Team
-
-        playervsteam=player[player['away']==team[0]]
+        
+        playervsteam=player[player['away']==str(team[0])]
+        playervsteam1=player[player['home_y']==str(team[0])]
+        playervsteam=playervsteam.append(playervsteam1)
+        
+        print("=================Player VS Team=========")
+        print(str(team[0]))
+        print(str(team[1]))
+        print(playervsteam)
         player_info['p_Runs']=playervsteam['runs'].sum().round(0)
         player_info['p_matches']=len(playervsteam['player_name'])
         player_info['p_avg']=player_info['p_Runs']/player_info['p_matches']
@@ -502,7 +524,7 @@ def todays():
     player_record=player_record_top1.append(player_record_top2)
     player_record=player_record.drop_duplicates('player_name')
     print(player_record)
-    return render_template("match1.html", title=title,team1=team11,team2=team22,playing="TOP PICK",sqaud1=player_record1,squad2=player_record2,top=player_record,venue=venue)
+    return render_template("match1.html", title=title,team1=team11,team2=team22,playing="TOP PICKS",sqaud1=player_record1,squad2=player_record2,top=player_record,venue=venue)
 
 # def covid_ask_help():
 #     return render_template("ask_help.html", title="Ask Help")

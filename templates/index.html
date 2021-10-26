@@ -108,9 +108,9 @@
           <div class="col-md-6 py-5 wow fadeInLeft">
             <h2 class="text-lg text-grey mb-4">Today's Big Match</h2>
             
-            <h1 class="mb-4">{{value['team1']}} Vs{{value['team2']}}</h1>
+            <h1 class="mb-4">{{value['team1']}}  Vs  {{value['team2']}}</h1>
             
-            <a href="/todays?t1={{value['team1']}}vs{{value['team2'].replace(' ','')}}?venue={{value['venue']}}" class="btn btn-primary btn-split">Playing 11 <div class="fab"><span class="mai-play"></span></div></a>
+            <a href="/todays?t1={{value['team1'].strip()}}vs{{value['team2'].strip()}}?venue={{value['venue']}}" class="btn btn-primary btn-split">Playing 11 <div class="fab"><span class="mai-play"></span></div></a>
           </div>
           <div class="col-md-6 py-5 wow zoomIn">
             <div class="img-fluid text-center">
