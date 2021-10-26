@@ -37,28 +37,38 @@ def index():
         print(teams)
         t=teams[0].split('v')
         print(t)
-        worl_cup_schedule1['team1']=t[0]
-        worl_cup_schedule1['team2']=t[1]
+        worl_cup_schedule1['team1']=t[0].replace(' ','')
+        worl_cup_schedule1['team2']=t[1].replace(' ','')
         todays_match=todays_match.append(worl_cup_schedule1)
     todays_match=todays_match.drop_duplicates(subset=['team1','team2'])
+    print("----todays_match--------")
+    print(todays_match)
+    print("----upcoming--------")
+    
     worl_cup_upcoming=worl_cup_schedule[worl_cup_schedule['date']>date.today()]
     worl_cup_upcoming['date'] =pd.to_datetime( worl_cup_upcoming['date']).dt.date
     worl_cup_upcoming=worl_cup_upcoming.head(8)
-    worl_cup_upcoming=worl_cup_upcoming.loc[:,['match_title','date']]
+    worl_cup_upcoming=worl_cup_upcoming.loc[:,['match_title','date','venue']]
     worl_cup_upcoming['match_title']=worl_cup_upcoming['match_title'].str.split("at")
-
+    print(worl_cup_upcoming)
 
     return render_template("index.html", title="Fantastic Playing Players",match_todays=todays_match,worl_cup_upcoming=worl_cup_upcoming)
 def match1():
-    t1 = request.args.get('t1')  
-    team=t1.split('v')
+    t1 = request.args.get('t1')
+    v=t1.split('?venue=')
+    venue=v[1]
+    print("====t1-------")
+    print(t1)  
+    print(venue)
+    team=v[0].split('v')
     team1=str(team[0])
     team2=str(team[1])
     team1=team1.replace(' ','')
     team2=team2.replace(' ','')
+    
     team1=pd.read_csv('data/t20_team/'+team1+'.csv')
     team2=pd.read_csv('data/t20_team/'+team2+'.csv')
-    t20=pd.read_csv('data/t20_player_stat.csv')
+    t20=pd.read_csv('data/t20_player_final.csv')
     print(t20)
     player_record1=pd.DataFrame()
 
@@ -66,15 +76,27 @@ def match1():
         t20m=t20.copy()
         t20m.loc[t20m.player_name==player_name2,"player_name"]=player_name1
         player=t20m[t20m['player_name']==player_name1]
-        
+        player=player.replace('-','0')
         player=player.sort_values('date')
         player['date']=pd.to_datetime(player['date'])  
         player_info=pd.DataFrame()
         player_info['player_name']=player['player_name']
         player_info['data_since']=player['date'].min()
         player_info['Runs']=player['runs'].sum().round(0)
+        #t20 international series and IPL
         intl_record=player[player['tournament']=="T20_INT"]
         ipl_record=player[player['tournament']=="IPL"]
+        #T20 WC
+        cup2021_record=player[player['tournament']=="T20_W2021"]
+        player_info['cups_Runs']=cup2021_record['runs'].sum().round(0)
+        player_info['cups_matches']=len(cup2021_record['player_name'])
+        player_info['cups_avg']=player_info['cups_Runs']/player_info['cups_matches']
+        player_info['cups_Strike_rate']=cup2021_record['strike_rate'].astype('float').mean()
+        cup2021_record['economy']=cup2021_record['economy'].astype('float')
+        player_info['cups_wickets']=cup2021_record['wickets'].sum()
+        player_info['cups_economy']=cup2021_record['economy'].mean()
+        player_info['cups_maiden']=cup2021_record['maidens'].mean()
+        
         player_info['Intl_Runs']=intl_record['runs'].sum().round(0)
         player_info['League_Runs']=ipl_record['runs'].sum().round(0)
         player_info['matches']=len(player['player_name'])
@@ -82,19 +104,14 @@ def match1():
         player_info['League_matches']=len(ipl_record['player_name'])
         player_info['Intl_avg']=player_info['Intl_Runs'].mean()
         player_info['avg']=player['runs'].mean()
-        player['strike_rate']=player['strike_rate'].str.replace("-","0")
-        intl_record['strike_rate']=intl_record['strike_rate'].str.replace("-","0")
-        ipl_record['strike_rate']=ipl_record['strike_rate'].str.replace("-","0")
         player_info['Strike_rate']=player['strike_rate'].astype('float').mean()
         player_info['Intl_SR']=intl_record['strike_rate'].astype('float').mean()
         player_info['League_SR']=ipl_record['strike_rate'].astype('float').mean()
         player_last5=player.tail(5) 
         player_info['last_five_runs']=player_last5['runs'].sum()
         player_info['last_five_avg']=(player_last5['runs'].sum())/5
-        player['economy']=player['economy'].str.replace("-","0")
         player['economy']=player['economy'].astype('float')
         player_last5['economy']=player_last5['economy'].astype('float')
-        intl_record['economy']=intl_record['economy'].str.replace("-","0")
         intl_record['economy']=intl_record['economy'].astype('float')
         player_info['wickets']=player['wickets'].sum()
         player_info['economy']=player['economy'].mean()
@@ -102,6 +119,33 @@ def match1():
         player_info['last_five_eco']=(player_last5['economy'].sum())/5
         player_info['Intl_wickets']=intl_record['wickets'].sum().round(0)
         player_info['League_eco']=intl_record['economy'].mean()
+
+        #VENUES
+        venue_record=player[player['venue']==venue]
+        player_info['v_Runs']=venue_record['runs'].sum().round(0)
+        player_info['v_matches']=len(venue_record['player_name'])
+        player_info['v_avg']=player_info['v_Runs']/player_info['v_matches']
+        player_info['v_Strike_rate']=venue_record['strike_rate'].astype('float').mean()
+        player_info['v_fours']=venue_record['fours'].sum()
+        player_info['v_sixes']=venue_record['sixes'].sum()
+        venue_record['economy']=venue_record['economy'].astype('float')
+        player_info['v_wickets']=venue_record['wickets'].sum()
+        player_info['v_economy']=venue_record['economy'].mean()
+        player_info['v_maiden']=venue_record['maidens'].mean()
+
+        #Player VS Team
+
+        playervsteam=player[player['away']==team[1]]
+        player_info['p_Runs']=playervsteam['runs'].sum().round(0)
+        player_info['p_matches']=len(playervsteam['player_name'])
+        player_info['p_avg']=player_info['p_Runs']/player_info['p_matches']
+        player_info['p_Strike_rate']=playervsteam['strike_rate'].astype('float').mean()
+        player_info['p_fours']=playervsteam['fours'].sum()
+        player_info['p_sixes']=playervsteam['sixes'].sum()
+        playervsteam['economy']=playervsteam['economy'].astype('float')
+        player_info['p_wickets']=playervsteam['wickets'].sum()
+        player_info['p_economy']=playervsteam['economy'].mean()
+        player_info['p_maiden']=playervsteam['maidens'].mean()
 
         # player_venue=player[player['venue']=="Dubai International Cricket Stadium"]
         # player_info['venues_runs']=player_venue['runs'].sum().round(0)
@@ -121,7 +165,7 @@ def match1():
     print(player_record1)
 
     player_record2=pd.DataFrame()
-
+    print("=========Player record 2==========")
     for player_name1,player_name2 in zip(team2['Player Name'],team2['Player Name 2']):
         t20m=t20.copy()
         t20m.loc[t20m.player_name==player_name2,"player_name"]=player_name1
@@ -135,6 +179,7 @@ def match1():
         player_info['Runs']=player['runs'].sum().round(0)
         intl_record=player[player['tournament']=="T20_INT"]
         ipl_record=player[player['tournament']=="IPL"]
+        
         player_info['Intl_Runs']=intl_record['runs'].sum().round(0)
         player_info['League_Runs']=ipl_record['runs'].sum().round(0)
         player_info['matches']=len(player['player_name'])
@@ -160,9 +205,44 @@ def match1():
         player_info['last_five_eco']=(player_last5['economy'].sum())/5
         player_info['Intl_wickets']=intl_record['wickets'].sum().round(0)
         player_info['League_eco']=intl_record['economy'].mean()
+
+        #WC 2021
+        cup2021_record=player[player['tournament']=="T20_W2021"]
+        player_info['cups_Runs']=cup2021_record['runs'].sum().round(0)
+        player_info['cups_matches']=len(cup2021_record['player_name'])
+        player_info['cups_avg']=player_info['cups_Runs']/player_info['cups_matches']
+        player_info['cups_Strike_rate']=cup2021_record['strike_rate'].astype('float').mean()
+        cup2021_record['economy']=cup2021_record['economy'].astype('float')
+        player_info['cups_wickets']=cup2021_record['wickets'].sum()
+        player_info['cups_economy']=cup2021_record['economy'].mean()
+        player_info['cups_maiden']=cup2021_record['maidens'].mean()
+        
+        
+        #VENUES
+        venue_record=player[player['venue']==venue]
+        player_info['v_Runs']=venue_record['runs'].sum().round(0)
+        player_info['v_matches']=len(venue_record['player_name'])
+        player_info['v_avg']=player_info['v_Runs']/player_info['v_matches']
+        player_info['v_Strike_rate']=venue_record['strike_rate'].astype('float').mean()
+        venue_record['economy']=venue_record['economy'].astype('float')
+        player_info['v_wickets']=venue_record['wickets'].sum()
+        player_info['v_economy']=venue_record['economy'].mean()
+        player_info['v_maiden']=venue_record['maidens'].mean()
         # player_venue=player[player['venue']=="Dubai International Cricket Stadium"]
         # player_info['venues_runs']=player_venue['runs'].sum().round(0)
         # player_info['venues_matchs']=player_venue['runs'].count()
+
+         #Player VS Team
+
+        playervsteam=player[player['away']==team[0]]
+        player_info['p_Runs']=playervsteam['runs'].sum().round(0)
+        player_info['p_matches']=len(playervsteam['player_name'])
+        player_info['p_avg']=player_info['p_Runs']/player_info['p_matches']
+        player_info['p_Strike_rate']=playervsteam['strike_rate'].astype('float').mean()
+        playervsteam['economy']=playervsteam['economy'].astype('float')
+        player_info['p_wickets']=playervsteam['wickets'].sum()
+        player_info['p_economy']=playervsteam['economy'].mean()
+        player_info['p_maiden']=playervsteam['maidens'].mean()
             
         player_record2=player_record2.append(player_info)
     player_record2=player_record2.drop_duplicates('player_name')
@@ -189,12 +269,17 @@ def match1():
     player_record=player_record.drop_duplicates('player_name')
     print(player_record)
 
-    return render_template("match1.html", title=t1,team1=team[0],team2=team[1],playing="TOP PICK",sqaud1=player_record1,squad2=player_record2,top=player_record)
+    return render_template("match1.html", title=t1,team1=team[0],team2=team[1],playing="TOP PICK",sqaud1=player_record1,squad2=player_record2,top=player_record,venue=venue)
 def todays():
     t1 = request.args.get('t1')
-    title=t1
+    print("=========t1=========")
+    print(t1)
+    v=t1.split('?venue=')
+    venue=v[1]
+    print(venue)
+    title=v[0]
      
-    team=t1.split(' ')
+    team=v[0].split('vs')
     team1=str(team[0])
     team2=str(team[1])
     team11=team1.replace(' ','')
@@ -206,7 +291,7 @@ def todays():
     print("-------t1-----------")
     print(t1)  
     print(team1)
-    t20=pd.read_csv('data/t20_player_stat.csv')
+    t20=pd.read_csv('data/t20_player_final.csv')
     print(t20)
     player_record1=pd.DataFrame()
 
@@ -214,8 +299,9 @@ def todays():
         t20m=t20.copy()
         t20m.loc[t20m.player_name==player_name2,"player_name"]=player_name1
         player=t20m[t20m['player_name']==player_name1]
-        
         player=player.sort_values('date')
+        player['economy']=player['economy'].str.replace("-","0")
+        player=player.replace('-','0')
         player['date']=pd.to_datetime(player['date'])  
         player_info=pd.DataFrame()
         player_info['player_name']=player['player_name']
@@ -236,9 +322,11 @@ def todays():
         player_info['Strike_rate']=player['strike_rate'].astype('float').mean()
         player_info['Intl_SR']=intl_record['strike_rate'].astype('float').mean()
         player_info['League_SR']=ipl_record['strike_rate'].astype('float').mean()
-        player_last5=player.tail(5) 
+        player=player.sort_values('date')
+        player_last5=player.tail(5)
         player_info['last_five_runs']=player_last5['runs'].sum()
         player_info['last_five_avg']=(player_last5['runs'].sum())/5
+       
         player['economy']=player['economy'].astype('float')
         player_last5['economy']=player_last5['economy'].astype('float')
         intl_record['economy']=intl_record['economy'].astype('float')
@@ -248,6 +336,44 @@ def todays():
         player_info['last_five_eco']=(player_last5['economy'].sum())/5
         player_info['Intl_wickets']=intl_record['wickets'].sum().round(0)
         player_info['League_eco']=intl_record['economy'].mean()
+
+        #WC 2021
+        cup2021_record=player[player['tournament']=="T20_W2021"]
+        player_info['cups_Runs']=cup2021_record['runs'].sum().round(0)
+        player_info['cups_matches']=len(cup2021_record['player_name'])
+        player_info['cups_avg']=player_info['cups_Runs']/player_info['cups_matches']
+        player_info['cups_Strike_rate']=cup2021_record['strike_rate'].astype('float').mean()
+        cup2021_record['economy']=cup2021_record['economy'].astype('float')
+        player_info['cups_wickets']=cup2021_record['wickets'].sum()
+        player_info['cups_economy']=cup2021_record['economy'].mean()
+        player_info['cups_maiden']=cup2021_record['maidens'].mean()
+        
+        
+        #VENUES
+        venue_record=player[player['venue']==venue]
+        player_info['v_Runs']=venue_record['runs'].sum().round(0)
+        player_info['v_matches']=len(venue_record['player_name'])
+        player_info['v_avg']=player_info['v_Runs']/player_info['v_matches']
+        player_info['v_Strike_rate']=venue_record['strike_rate'].astype('float').mean()
+        venue_record['economy']=venue_record['economy'].astype('float')
+        player_info['v_wickets']=venue_record['wickets'].sum()
+        player_info['v_economy']=venue_record['economy'].mean()
+        player_info['v_maiden']=venue_record['maidens'].mean()
+        # player_venue=player[player['venue']=="Dubai International Cricket Stadium"]
+        # player_info['venues_runs']=player_venue['runs'].sum().round(0)
+        # player_info['venues_matchs']=player_venue['runs'].count()
+
+         #Player VS Team
+
+        playervsteam=player[player['away']==team[1]]
+        player_info['p_Runs']=playervsteam['runs'].sum().round(0)
+        player_info['p_matches']=len(playervsteam['player_name'])
+        player_info['p_avg']=player_info['p_Runs']/player_info['p_matches']
+        player_info['p_Strike_rate']=playervsteam['strike_rate'].astype('float').mean()
+        playervsteam['economy']=playervsteam['economy'].astype('float')
+        player_info['p_wickets']=playervsteam['wickets'].sum()
+        player_info['p_economy']=playervsteam['economy'].mean()
+        player_info['p_maiden']=playervsteam['maidens'].mean()
 
         # player_venue=player[player['venue']=="Dubai International Cricket Stadium"]
         # player_info['venues_runs']=player_venue['runs'].sum().round(0)
@@ -273,6 +399,7 @@ def todays():
         t20m.loc[t20m.player_name==player_name2,"player_name"]=player_name1
         player=t20m[t20m['player_name']==player_name1]
         player=player.sort_values('date')
+        player=player.replace('-','0')
         player['date']=pd.to_datetime(player['date'])  
         player=player.replace('-','0')
         player_info=pd.DataFrame()
@@ -310,6 +437,44 @@ def todays():
         # player_venue=player[player['venue']=="Dubai International Cricket Stadium"]
         # player_info['venues_runs']=player_venue['runs'].sum().round(0)
         # player_info['venues_matchs']=player_venue['runs'].count()
+
+        #WC 2021
+        cup2021_record=player[player['tournament']=="T20_W2021"]
+        player_info['cups_Runs']=cup2021_record['runs'].sum().round(0)
+        player_info['cups_matches']=len(cup2021_record['player_name'])
+        player_info['cups_avg']=player_info['cups_Runs']/player_info['cups_matches']
+        player_info['cups_Strike_rate']=cup2021_record['strike_rate'].astype('float').mean()
+        cup2021_record['economy']=cup2021_record['economy'].astype('float')
+        player_info['cups_wickets']=cup2021_record['wickets'].sum()
+        player_info['cups_economy']=cup2021_record['economy'].mean()
+        player_info['cups_maiden']=cup2021_record['maidens'].mean()
+        
+        
+        #VENUES
+        venue_record=player[player['venue']==venue]
+        player_info['v_Runs']=venue_record['runs'].sum().round(0)
+        player_info['v_matches']=len(venue_record['player_name'])
+        player_info['v_avg']=player_info['v_Runs']/ player_info['v_matches']
+        player_info['v_Strike_rate']=venue_record['strike_rate'].astype('float').mean()
+        venue_record['economy']=venue_record['economy'].astype('float')
+        player_info['v_wickets']=venue_record['wickets'].sum()
+        player_info['v_economy']=venue_record['economy'].mean()
+        player_info['v_maiden']=venue_record['maidens'].mean()
+        # player_venue=player[player['venue']=="Dubai International Cricket Stadium"]
+        # player_info['venues_runs']=player_venue['runs'].sum().round(0)
+        # player_info['venues_matchs']=player_venue['runs'].count()
+
+         #Player VS Team
+
+        playervsteam=player[player['away']==team[0]]
+        player_info['p_Runs']=playervsteam['runs'].sum().round(0)
+        player_info['p_matches']=len(playervsteam['player_name'])
+        player_info['p_avg']=player_info['p_Runs']/player_info['p_matches']
+        player_info['p_Strike_rate']=playervsteam['strike_rate'].astype('float').mean()
+        playervsteam['economy']=playervsteam['economy'].astype('float')
+        player_info['p_wickets']=playervsteam['wickets'].sum()
+        player_info['p_economy']=playervsteam['economy'].mean()
+        player_info['p_maiden']=playervsteam['maidens'].mean()
             
         player_record2=player_record2.append(player_info)
     player_record2=player_record2.drop_duplicates('player_name')

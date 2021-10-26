@@ -110,7 +110,7 @@
             
             <h1 class="mb-4">{{value['team1']}} Vs{{value['team2']}}</h1>
             
-            <a href="/todays?t1={{value['team1']}}{{value['team2'].replace(' ','')}}" class="btn btn-primary btn-split">Playing 11 <div class="fab"><span class="mai-play"></span></div></a>
+            <a href="/todays?t1={{value['team1']}}vs{{value['team2'].replace(' ','')}}?venue={{value['venue']}}" class="btn btn-primary btn-split">Playing 11 <div class="fab"><span class="mai-play"></span></div></a>
           </div>
           <div class="col-md-6 py-5 wow zoomIn">
             <div class="img-fluid text-center">
@@ -147,7 +147,7 @@
               <p>Upcoming...</p>
               <h5 class="text-secondary">{{value['match_title'][0]}}</h5>
               <p>{{value['date']}}</p>
-              <a href="match1?t1={{value['match_title'][0]}}" class="btn btn-primary">Team Analysis</a>
+              <a href="match1?t1={{value['match_title'][0]}}?venue={{value['venue']}}" class="btn btn-primary">Team Analysis</a>
             </div>
           </div>
         </div>
