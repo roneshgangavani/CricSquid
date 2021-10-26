@@ -502,7 +502,7 @@ def todays():
     player_record=player_record_top1.append(player_record_top2)
     player_record=player_record.drop_duplicates('player_name')
     print(player_record)
-    return render_template("match1.html", title=title,team1=team11,team2=team22,playing="TOP PICK",sqaud1=player_record1,squad2=player_record2,top=player_record)
+    return render_template("match1.html", title=title,team1=team11,team2=team22,playing="TOP PICK",sqaud1=player_record1,squad2=player_record2,top=player_record,venue=venue)
 
 # def covid_ask_help():
 #     return render_template("ask_help.html", title="Ask Help")
