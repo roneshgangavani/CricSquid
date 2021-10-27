@@ -278,7 +278,7 @@ def match1():
     player_record=player_record_top1.append(player_record_top2)
     player_record=player_record.drop_duplicates('player_name')
     print(player_record)
-
+    t1=str(t1)+" Fantasy Playing 11 Pick"
     return render_template("match1.html", title=t1,team1=team[0],team2=team[1],playing="TOP PICK",sqaud1=player_record1,squad2=player_record2,top=player_record,venue=venue)
 def todays():
     t1 = request.args.get('t1')
@@ -524,6 +524,8 @@ def todays():
     player_record=player_record_top1.append(player_record_top2)
     player_record=player_record.drop_duplicates('player_name')
     print(player_record)
+    title=str(title)+" Fantasy Playing 11 Pick"
+    
     return render_template("match1.html", title=title,team1=team11,team2=team22,playing="TOP PICKS",sqaud1=player_record1,squad2=player_record2,top=player_record,venue=venue)
 
 # def covid_ask_help():
