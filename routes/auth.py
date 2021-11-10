@@ -51,6 +51,7 @@ def index():
     worl_cup_upcoming=worl_cup_upcoming.loc[:,['match_title','date','venue']]
     worl_cup_upcoming['match_title']=worl_cup_upcoming['match_title'].str.split("at")
     print(worl_cup_upcoming)
+   
 
     return render_template("index.html", title="Fantastic Playing Players",match_todays=todays_match,worl_cup_upcoming=worl_cup_upcoming)
 def match1():
