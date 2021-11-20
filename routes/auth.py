@@ -28,7 +28,7 @@ def index():
     worl_cup_schedule=worl_cup_schedule.loc[:,['id','match_title','match_subtitle','venue','date']]
     worl_cup_schedule['date']=pd.to_datetime(worl_cup_schedule['date'])
     worl_cup_schedule['date'] =pd.to_datetime( worl_cup_schedule['date']).dt.date
-    worl_cup_schedule1=worl_cup_schedule[worl_cup_schedule['date']==date.today()]
+    worl_cup_schedule1=worl_cup_schedule.copy()
     print(worl_cup_schedule1)
     todays_match=pd.DataFrame()
     for i in worl_cup_schedule1['match_title']:
@@ -45,7 +45,7 @@ def index():
     print(todays_match)
     print("----upcoming--------")
     
-    worl_cup_upcoming=worl_cup_schedule[worl_cup_schedule['date']>date.today()]
+    worl_cup_upcoming=worl_cup_schedule.copy()
     worl_cup_upcoming['date'] =pd.to_datetime( worl_cup_upcoming['date']).dt.date
     worl_cup_upcoming=worl_cup_upcoming.head(8)
     worl_cup_upcoming=worl_cup_upcoming.loc[:,['match_title','date','venue']]
